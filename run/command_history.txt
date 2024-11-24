@@ -1,0 +1,8 @@
+/give @a notenoughtoolsandarmor:acacia_log_axe
+/give @a notenoughtoolsandarmor:ancient_debris_side_axe
+/give @a notenoughtoolsandarmor:acacia_log_shovel
+/give Dev notenoughtoolsandarmor:amethyst_block_axe
+/give @a notenoughtoolsandarmor:acacia_log_pickaxe
+/time set day
+/give Dev notenoughtoolsandarmor:the_forge
+/give Dev notenoughtoolsandarmor:theforge
