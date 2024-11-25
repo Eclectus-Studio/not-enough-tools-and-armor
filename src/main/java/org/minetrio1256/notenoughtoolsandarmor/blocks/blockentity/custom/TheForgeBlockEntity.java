@@ -29,6 +29,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.minetrio1256.notenoughtoolsandarmor.blocks.blockentity.ModBlockEntities;
 import org.minetrio1256.notenoughtoolsandarmor.items.ModItems;
+import org.minetrio1256.notenoughtoolsandarmor.screen.custom.theforge.TheForgeMenu;
 
 public class TheForgeBlockEntity extends BlockEntity implements MenuProvider {
     public TheForgeBlockEntity(BlockPos pPos, BlockState pBlockState) {
@@ -88,7 +89,7 @@ public class TheForgeBlockEntity extends BlockEntity implements MenuProvider {
     @Nullable
     @Override
     public AbstractContainerMenu createMenu(int i, Inventory inventory, Player player) {
-        return null;
+        return new TheForgeMenu(i, inventory, this, this.data);
     }
 
     @Override

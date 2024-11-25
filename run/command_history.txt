@@ -1,0 +1,13 @@
+/serverpack
+/serverpack pop
+/jfr
+/jfr start
+/jfr stop
+/time set day
+/effect give Dev minecraft:hunger
+/effect give @a minecraft:saturation
+/effect give @a minecraft:saturation infinite
+/effect clear @a
+/summon mccourse:capybara
+/give @a mccourse:pedestal
+/give @a mccourse:crystallizer
