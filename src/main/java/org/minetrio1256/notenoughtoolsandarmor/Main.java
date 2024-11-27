@@ -1,6 +1,7 @@
 package org.minetrio1256.notenoughtoolsandarmor;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -17,6 +18,8 @@ import org.minetrio1256.notenoughtoolsandarmor.blocks.blockentity.ModBlockEntiti
 import org.minetrio1256.notenoughtoolsandarmor.items.ModItems;
 import org.minetrio1256.notenoughtoolsandarmor.items.tabs.ModCreativeModeTab;
 import org.minetrio1256.notenoughtoolsandarmor.items.tools.ToolItem.axe;
+import org.minetrio1256.notenoughtoolsandarmor.screen.ModMenuTypes;
+import org.minetrio1256.notenoughtoolsandarmor.screen.custom.theforge.TheForgeScreen;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -39,6 +42,7 @@ public class Main {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModBlockEntities.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
 
 
         // Register ourselves for server and other game events we are interested in
@@ -67,6 +71,7 @@ public class Main {
 
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+            MenuScreens.register(ModMenuTypes.TheForgeMenu.get(), TheForgeScreen::new);
         }
     }
 }

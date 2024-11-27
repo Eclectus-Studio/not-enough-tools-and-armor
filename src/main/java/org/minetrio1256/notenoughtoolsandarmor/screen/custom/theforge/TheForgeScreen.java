@@ -24,8 +24,6 @@ public class TheForgeScreen extends AbstractContainerScreen<TheForgeMenu>  {
     protected void init() {
         super.init();
         // Gets rid of title and inventory title
-        this.inventoryLabelY = 10000;
-        this.titleLabelY = 10000;
     }
 
     @Override
@@ -43,7 +41,7 @@ public class TheForgeScreen extends AbstractContainerScreen<TheForgeMenu>  {
 
     private void renderProgressArrow(GuiGraphics guiGraphics, int x, int y) {
         if(menu.isCrafting()) {
-            guiGraphics.blit(ARROW_TEXTURE,x + 73, y + 35, 0, 0, menu.getScaledArrowProgress(), 16, 24, 16);
+            guiGraphics.blit(ARROW_TEXTURE,x + 80, y + 35, 0, 0, menu.getScaledArrowProgress(), 16, 24, 16);
         }
     }
 

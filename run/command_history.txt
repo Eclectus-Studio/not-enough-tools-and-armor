@@ -11,3 +11,4 @@
 /summon mccourse:capybara
 /give @a mccourse:pedestal
 /give @a mccourse:crystallizer
+/give @a notenoughtoolsandarmor:theforge
