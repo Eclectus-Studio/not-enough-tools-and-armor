@@ -17,6 +17,7 @@ import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.RecipeHolder;
+import net.minecraft.world.item.crafting.RecipeInput;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
@@ -147,7 +148,7 @@ public class TheForgeBlockEntity extends BlockEntity implements MenuProvider {
     }
 
     public void tick(Level level, BlockPos pPos, BlockState pState) {
-        if(hasRecipe() && isOutputSlotEmptyOrReceivable()) {
+        if(hasRecipe(this) && isOutputSlotEmptyOrReceivable()) {
             increaseCraftingProgress();
             setChanged(level, pPos, pState);
 
@@ -188,14 +189,39 @@ public class TheForgeBlockEntity extends BlockEntity implements MenuProvider {
                 this.itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() < this.itemHandler.getStackInSlot(OUTPUT_SLOT).getMaxStackSize();
     }
 
-    private boolean hasRecipe() {
-        Optional<RecipeHolder<TheForgeRecipe>> recipe = getCurrentRecipe();
-        if(recipe.isEmpty()) {
-            return false;
+    private static boolean hasRecipe(TheForgeBlockEntity entity) {
+        Level level = entity.level;
+        SimpleContainer inventory = new SimpleContainer(entity.itemHandler.getSlots());
+        for (int i = 0; i < entity.itemHandler.getSlots(); i++) {
+            inventory.setItem(i, entity.itemHandler.getStackInSlot(i));
         }
 
-        ItemStack output = recipe.get().value().getResultItem(null);
-        return canInsertAmountIntoOutputSlot(output.getCount()) && canInsertItemIntoOutputSlot(output);
+        Optional<RecipeHolder<TheForgeRecipe>> recipe = Optional.empty();
+        if (level != null) {
+            recipe = level.getRecipeManager().getRecipeFor(ModRecipes.TheForge_TYPE.get(), getRecipeInput(inventory), level);
+        }
+
+
+        return recipe.isPresent() && canInsertItemIntoOutputSlot(inventory) &&
+                canInsertItemIntoOutputSlot(inventory, recipe.get().value().output.copy().getItem().getDefaultInstance());
+    }
+
+    private static boolean canInsertItemIntoOutputSlot(SimpleContainer inventory) {
+        return inventory.getItem(2).getMaxStackSize() > inventory.getItem(2).getCount();
+    }
+
+    public static RecipeInput getRecipeInput(SimpleContainer inventory) {
+        return new RecipeInput() {
+            @Override
+            public ItemStack getItem(int index) {
+                return inventory.getItem(index).copy();
+            }
+
+            @Override
+            public int size() {
+                return inventory.getContainerSize();
+            }
+        };
     }
 
     private Optional<RecipeHolder<TheForgeRecipe>> getCurrentRecipe() {
@@ -203,15 +229,8 @@ public class TheForgeBlockEntity extends BlockEntity implements MenuProvider {
                 .getRecipeFor(ModRecipes.TheForge_TYPE.get(), new TheForgeRecipeInput(itemHandler.getStackInSlot(INPUT_SLOT_ONE), itemHandler.getStackInSlot(INPUT_SLOT_TWO)), level);
     }
 
-    private boolean canInsertItemIntoOutputSlot(ItemStack output) {
-        return itemHandler.getStackInSlot(OUTPUT_SLOT).isEmpty() || this.itemHandler.getStackInSlot(OUTPUT_SLOT).getItem() == output.getItem();
-    }
-
-    private boolean canInsertAmountIntoOutputSlot(int count) {
-        int maxCount = itemHandler.getStackInSlot(OUTPUT_SLOT).isEmpty() ? 64 : itemHandler.getStackInSlot(OUTPUT_SLOT).getMaxStackSize();
-        int currentCount = itemHandler.getStackInSlot(OUTPUT_SLOT).getCount();
-
-        return maxCount >= currentCount + count;
+    private static boolean canInsertItemIntoOutputSlot(SimpleContainer inventory, ItemStack stack) {
+        return inventory.getItem(2).getItem() == stack.getItem() || inventory.getItem(2).isEmpty();
     }
 
     @Override

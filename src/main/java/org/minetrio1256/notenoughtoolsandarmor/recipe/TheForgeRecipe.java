@@ -84,11 +84,11 @@ public class TheForgeRecipe implements Recipe<RecipeInput>{
                 ResourceLocation.parse(Main.MOD_ID);
 
         private final MapCodec<TheForgeRecipe> CODEC = RecordCodecBuilder.mapCodec((instance) -> {
-            return instance.group(CodecFix.ITEM_STACK_CODEC.fieldOf("output").forGetter((recipe) -> {
+            return instance.group(CodecFix.ITEM_STACK_CODEC.fieldOf("result").forGetter((recipe) -> {
                 return recipe.output;
-            }), Ingredient.CODEC_NONEMPTY.fieldOf("ingredient1").forGetter((recipe) -> {
+            }), Ingredient.CODEC_NONEMPTY.fieldOf("ingredient").forGetter((recipe) -> {
                 return recipe.ingredient0;
-            }), Ingredient.CODEC_NONEMPTY.fieldOf("ingredient2").forGetter((recipe) -> {
+            }), Ingredient.CODEC_NONEMPTY.fieldOf("ingredientdos").forGetter((recipe) -> {
                 return recipe.ingredient1;
             })).apply(instance, TheForgeRecipe::new);
         });
