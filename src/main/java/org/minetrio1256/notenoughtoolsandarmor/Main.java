@@ -2,7 +2,6 @@ package org.minetrio1256.notenoughtoolsandarmor;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.gui.screens.MenuScreens;
-import net.minecraft.world.level.block.Block;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -17,7 +16,8 @@ import org.minetrio1256.notenoughtoolsandarmor.blocks.ModBlocks;
 import org.minetrio1256.notenoughtoolsandarmor.blocks.blockentity.ModBlockEntities;
 import org.minetrio1256.notenoughtoolsandarmor.items.ModItems;
 import org.minetrio1256.notenoughtoolsandarmor.items.tabs.ModCreativeModeTab;
-import org.minetrio1256.notenoughtoolsandarmor.items.tools.ToolItem.axe;
+import org.minetrio1256.notenoughtoolsandarmor.recipe.ModRecipes;
+import org.minetrio1256.notenoughtoolsandarmor.screen.ModMenuTypes;
 import org.minetrio1256.notenoughtoolsandarmor.screen.ModMenuTypes;
 import org.minetrio1256.notenoughtoolsandarmor.screen.custom.theforge.TheForgeScreen;
 import org.slf4j.Logger;
@@ -36,13 +36,13 @@ public class Main {
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
-
         ModCreativeModeTab.register(modEventBus);
 
         ModItems.register(modEventBus);
-        ModBlocks.register(modEventBus);
         ModBlockEntities.register(modEventBus);
         ModMenuTypes.register(modEventBus);
+        ModBlocks.register(modEventBus);
+        ModRecipes.register(modEventBus);
 
 
         // Register ourselves for server and other game events we are interested in
@@ -53,6 +53,7 @@ public class Main {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
+
     }
 
     // Add the example block item to the building blocks tab
@@ -61,9 +62,17 @@ public class Main {
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
-        // Do something when the server starts
-        LOGGER.info("HELLO from server starting");
+        var recipeManager = event.getServer().getRecipeManager();
+        var recipes = recipeManager.getAllRecipesFor(ModRecipes.TheForge_TYPE.get());
+
+        LOGGER.info("Number of 'toolforging' recipes found: {}", recipes.size());
+        recipes.forEach(recipe -> {
+            LOGGER.info("Found recipe: {} | Inputs: {} + {} | Output: {}",
+                    recipe.id(), recipe.value().ingredient0, recipe.value().ingredient1, recipe.value().output);
+        });
     }
+
+
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)

@@ -16,17 +16,12 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityTicker;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.properties.BlockStateProperties;
-import net.minecraft.world.level.block.state.properties.BooleanProperty;
-import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.phys.BlockHitResult;
 import org.jetbrains.annotations.Nullable;
 import org.minetrio1256.notenoughtoolsandarmor.blocks.blockentity.ModBlockEntities;
 import org.minetrio1256.notenoughtoolsandarmor.blocks.blockentity.custom.TheForgeBlockEntity;
 
 public class TheForgeBlock extends BaseEntityBlock {
-    public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
-    public static final BooleanProperty LIT = BlockStateProperties.LIT;
     public static final MapCodec<TheForgeBlock> CODEC = simpleCodec(TheForgeBlock::new);
 
     public TheForgeBlock(Properties pProperties) {

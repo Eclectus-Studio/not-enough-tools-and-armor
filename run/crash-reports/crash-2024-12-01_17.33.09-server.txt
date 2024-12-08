@@ -1,0 +1,161 @@
+---- Minecraft Crash Report ----
+// Everything's going to plan. No, really, that was supposed to happen.
+
+Time: 2024-12-01 17:33:09
+Description: Ticking block entity
+
+java.lang.NullPointerException: Registry Object not present: notenoughtoolsandarmor:toolforging
+	at java.base/java.util.Objects.requireNonNull(Objects.java:360) ~[?:?] {}
+	at TRANSFORMER/forge@51.0.33/net.minecraftforge.registries.RegistryObject.get(RegistryObject.java:192) ~[forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21.jar%231!/:?] {re:classloading}
+	at TRANSFORMER/notenoughtoolsandarmor@1.3-ALPHA/org.minetrio1256.notenoughtoolsandarmor.blocks.blockentity.custom.TheForgeBlockEntity.getCurrentRecipe(TheForgeBlockEntity.java:208) ~[main/:?] {re:classloading}
+	at TRANSFORMER/notenoughtoolsandarmor@1.3-ALPHA/org.minetrio1256.notenoughtoolsandarmor.blocks.blockentity.custom.TheForgeBlockEntity.hasRecipe(TheForgeBlockEntity.java:197) ~[main/:?] {re:classloading}
+	at TRANSFORMER/notenoughtoolsandarmor@1.3-ALPHA/org.minetrio1256.notenoughtoolsandarmor.blocks.blockentity.custom.TheForgeBlockEntity.tick(TheForgeBlockEntity.java:152) ~[main/:?] {re:classloading}
+	at TRANSFORMER/notenoughtoolsandarmor@1.3-ALPHA/org.minetrio1256.notenoughtoolsandarmor.blocks.custom.TheForgeBlock.lambda$getTicker$0(TheForgeBlock.java:86) ~[main/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21/net.minecraft.world.level.chunk.LevelChunk$BoundTickingBlockEntity.tick(LevelChunk.java:708) ~[forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21.jar%230!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21/net.minecraft.world.level.chunk.LevelChunk$RebindableTickingBlockEntityWrapper.tick(LevelChunk.java:782) ~[forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21.jar%230!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21/net.minecraft.world.level.Level.tickBlockEntities(Level.java:562) ~[forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21.jar%230!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21/net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:416) ~[forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21.jar%230!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21/net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1021) ~[forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21.jar%230!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21/net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:911) ~[forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21.jar%230!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21/net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:109) ~[forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21.jar%230!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21/net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:701) ~[forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21.jar%230!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21/net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:267) ~[forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21.jar%230!/:?] {re:classloading,pl:accesstransformer:B}
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Suspected Mod: 
+	notenoughtoolsandarmor (notenoughtoolsandarmor), Version: 1.3-ALPHA
+		at TRANSFORMER/notenoughtoolsandarmor@1.3-ALPHA/org.minetrio1256.notenoughtoolsandarmor.blocks.blockentity.custom.TheForgeBlockEntity.getCurrentRecipe(TheForgeBlockEntity.java:208)
+Stacktrace:
+	at java.base/java.util.Objects.requireNonNull(Objects.java:360) ~[?:?] {}
+	at TRANSFORMER/forge@51.0.33/net.minecraftforge.registries.RegistryObject.get(RegistryObject.java:192) ~[forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21.jar%231!/:?] {re:classloading}
+	at TRANSFORMER/notenoughtoolsandarmor@1.3-ALPHA/org.minetrio1256.notenoughtoolsandarmor.blocks.blockentity.custom.TheForgeBlockEntity.getCurrentRecipe(TheForgeBlockEntity.java:208) ~[main/:?] {re:classloading}
+	at TRANSFORMER/notenoughtoolsandarmor@1.3-ALPHA/org.minetrio1256.notenoughtoolsandarmor.blocks.blockentity.custom.TheForgeBlockEntity.hasRecipe(TheForgeBlockEntity.java:197) ~[main/:?] {re:classloading}
+	at TRANSFORMER/notenoughtoolsandarmor@1.3-ALPHA/org.minetrio1256.notenoughtoolsandarmor.blocks.blockentity.custom.TheForgeBlockEntity.tick(TheForgeBlockEntity.java:152) ~[main/:?] {re:classloading}
+	at TRANSFORMER/notenoughtoolsandarmor@1.3-ALPHA/org.minetrio1256.notenoughtoolsandarmor.blocks.custom.TheForgeBlock.lambda$getTicker$0(TheForgeBlock.java:86) ~[main/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21/net.minecraft.world.level.chunk.LevelChunk$BoundTickingBlockEntity.tick(LevelChunk.java:708) ~[forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21.jar%230!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21/net.minecraft.world.level.chunk.LevelChunk$RebindableTickingBlockEntityWrapper.tick(LevelChunk.java:782) ~[forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21.jar%230!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21/net.minecraft.world.level.Level.tickBlockEntities(Level.java:562) ~[forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21.jar%230!/:?] {re:classloading,pl:accesstransformer:B}
+-- Block entity being ticked --
+Details:
+	Name: notenoughtoolsandarmor:crystallizer_be // org.minetrio1256.notenoughtoolsandarmor.blocks.blockentity.custom.TheForgeBlockEntity
+	Block: Block{notenoughtoolsandarmor:theforge}
+	Block location: World: (-2,83,6), Section: (at 14,3,6 in -1,5,0; chunk contains blocks -16,-64,0 to -1,319,15), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,-64,0 to -1,319,511)
+	Block: Block{notenoughtoolsandarmor:theforge}
+	Block location: World: (-2,83,6), Section: (at 14,3,6 in -1,5,0; chunk contains blocks -16,-64,0 to -1,319,15), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,-64,0 to -1,319,511)
+Stacktrace:
+	at TRANSFORMER/minecraft@1.21/net.minecraft.world.level.chunk.LevelChunk$BoundTickingBlockEntity.tick(LevelChunk.java:708) ~[forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21.jar%230!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21/net.minecraft.world.level.chunk.LevelChunk$RebindableTickingBlockEntityWrapper.tick(LevelChunk.java:782) ~[forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21.jar%230!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21/net.minecraft.world.level.Level.tickBlockEntities(Level.java:562) ~[forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21.jar%230!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21/net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:416) ~[forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21.jar%230!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21/net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1021) ~[forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21.jar%230!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21/net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:911) ~[forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21.jar%230!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21/net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:109) ~[forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21.jar%230!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21/net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:701) ~[forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21.jar%230!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21/net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:267) ~[forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21.jar%230!/:?] {re:classloading,pl:accesstransformer:B}
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?] {}
+
+
+-- Affected level --
+Details:
+	All players: 0 total; []
+	Chunk stats: 841
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (0,79,0), Section: (at 0,15,0 in 0,4,0; chunk contains blocks 0,-64,0 to 15,319,15), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,-64,0 to 511,319,511)
+	Level time: 5874 game time, 5874 day time
+	Level name: dev
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Commands: true
+	Level weather: Rain time: 95704 (now: false), thunder time: 168665 (now: false)
+	Known server brands: forge
+	Removed feature flags: 
+	Level was modded: true
+	Level storage version: 0x04ABD - Anvil
+	Loaded entity count: 70
+Stacktrace:
+	at TRANSFORMER/minecraft@1.21/net.minecraft.server.level.ServerLevel.fillReportDetails(ServerLevel.java:1697) ~[forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21.jar%230!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21/net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1024) ~[forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21.jar%230!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21/net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:911) ~[forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21.jar%230!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21/net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:109) ~[forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21.jar%230!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21/net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:701) ~[forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21.jar%230!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21/net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:267) ~[forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21.jar%230!/:?] {re:classloading,pl:accesstransformer:B}
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21
+	Minecraft Version ID: 1.21
+	Operating System: Mac OS X (x86_64) version 13.7.1
+	Java Version: 21.0.1, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode, sharing), Oracle Corporation
+	Memory: 164102144 bytes (156 MiB) / 753926144 bytes (719 MiB) up to 2147483648 bytes (2048 MiB)
+	CPUs: 4
+	Processor Vendor: GenuineIntel
+	Processor Name: Intel(R) Core(TM) i5-7400 CPU @ 3.00GHz
+	Identifier: Intel64 Family 6 Model 158 Stepping 9
+	Microarchitecture: Kaby Lake
+	Frequency (GHz): 3.00
+	Number of physical packages: 1
+	Number of physical CPUs: 4
+	Number of logical CPUs: 4
+	Graphics card #0 name: Radeon Pro 555
+	Graphics card #0 vendor: AMD (0x1002)
+	Graphics card #0 VRAM (MiB): 2048.00
+	Graphics card #0 deviceId: 0x67ef
+	Graphics card #0 versionInfo: Revision ID: 0x00c7, ROM Revision: 113-C980AA-921, VBIOS Version: 113-C9810A1P-017, EFI Driver Version: 01.00.921
+	Memory slot #0 capacity (MiB): 4096.00
+	Memory slot #0 clockSpeed (GHz): 2.40
+	Memory slot #0 type: DDR4 SO-DIMM
+	Memory slot #1 capacity (MiB): 4096.00
+	Memory slot #1 clockSpeed (GHz): 2.40
+	Memory slot #1 type: DDR4 SO-DIMM
+	Virtual memory max (MiB): 9216.00
+	Virtual memory used (MiB): 5716.41
+	Swap memory total (MiB): 1024.00
+	Swap memory used (MiB): 7.75
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 746951.44, total: 953669.69
+	Space in storage for workdir (MiB): available: 746951.44, total: 953669.69
+	JVM Flags: 1 total; -Xss1M
+	Server Running: true
+	Player Count: 0 / 8; []
+	Active Data Packs: vanilla (incompatible), mod:notenoughtoolsandarmor (incompatible), mod:forge (incompatible)
+	Available Data Packs: bundle, mod:forge (incompatible), mod:notenoughtoolsandarmor (incompatible), trade_rebalance, vanilla (incompatible)
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Stable
+	World Seed: 5075881557050642877
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'forge'; Server brand changed to 'forge'
+	Launched Version: MOD_DEV
+	ModLauncher: 10.2.1
+	ModLauncher launch target: forge_userdev_client
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		/ slf4jfixer PLUGINSERVICE 
+		/ runtimedistcleaner PLUGINSERVICE 
+		/ runtime_enum_extender PLUGINSERVICE 
+		/ object_holder_definalize PLUGINSERVICE 
+		/ capability_token_subclass PLUGINSERVICE 
+		/ accesstransformer PLUGINSERVICE 
+		/ eventbus PLUGINSERVICE 
+		/ mixin PLUGINSERVICE 
+		/ fml TRANSFORMATIONSERVICE 
+		/ mixin TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		lowcodefml@51
+		javafml@51.0.33
+	Mod List: 
+		                                                  |Minecraft                     |minecraft                     |1.21                |DONE      |Manifest: NOSIGNATURE
+		main                                              |notenoughtoolsandarmor        |notenoughtoolsandarmor        |1.3-ALPHA           |DONE      |Manifest: NOSIGNATURE
+		                                                  |Forge                         |forge                         |51.0.33             |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: 3c10707d-ca10-4aca-be76-81216ec5a69c
+	FML: 0.0
+	Forge: net.minecraftforge:51.0.33

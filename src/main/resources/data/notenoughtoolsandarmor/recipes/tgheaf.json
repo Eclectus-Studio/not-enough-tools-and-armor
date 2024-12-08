@@ -1,0 +1,12 @@
+{
+  "type": "notenoughtoolsandarmor:toolforging",
+  "ingredient": {
+    "item": "minecraft:iron_ingot"
+  },
+  "ingredientdos": {
+    "item": "minecraft:gold_ingot"
+  },
+  "result": {
+    "item": "minecraft:netherite_ingot"
+  }
+}

@@ -18,6 +18,6 @@ public class ModBlockEntities {
     }
 
     public static final RegistryObject<BlockEntityType<TheForgeBlockEntity>> TheForge_BE =
-            BLOCK_ENTITIES.register("crystallizer_be", () -> BlockEntityType.Builder.of(
+            BLOCK_ENTITIES.register("the_forge_be", () -> BlockEntityType.Builder.of(
                     TheForgeBlockEntity::new, ModBlocks.TheForge.get()).build(null));
 }

@@ -16,9 +16,9 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.crafting.RecipeHolder;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
@@ -28,10 +28,36 @@ import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.minetrio1256.notenoughtoolsandarmor.blocks.blockentity.ModBlockEntities;
-import org.minetrio1256.notenoughtoolsandarmor.items.ModItems;
+import org.minetrio1256.notenoughtoolsandarmor.recipe.ModRecipes;
+import org.minetrio1256.notenoughtoolsandarmor.recipe.TheForgeRecipe;
+import org.minetrio1256.notenoughtoolsandarmor.recipe.TheForgeRecipeInput;
 import org.minetrio1256.notenoughtoolsandarmor.screen.custom.theforge.TheForgeMenu;
 
+import java.util.Optional;
+
 public class TheForgeBlockEntity extends BlockEntity implements MenuProvider {
+    public final ItemStackHandler itemHandler = new ItemStackHandler(4) {
+        @Override
+        protected void onContentsChanged(int slot) {
+            setChanged();
+            if(!level.isClientSide()) {
+                level.sendBlockUpdated(getBlockPos(), getBlockState(), getBlockState(), 3);
+            }
+        }
+    };
+
+    private static final int INPUT_SLOT_ONE = 0;
+    private static final int INPUT_SLOT_TWO = 1;
+    private static final int OUTPUT_SLOT = 2;
+    private static final int ENERGY_ITEM_SLOT = 3;
+
+    private LazyOptional<IItemHandler> lazyItemHandler = LazyOptional.empty();
+
+    protected final ContainerData data;
+    private int progress = 0;
+    private int maxProgress = 72;
+    private final int DEFAULT_MAX_PROGRESS = 72;
+
     public TheForgeBlockEntity(BlockPos pPos, BlockState pBlockState) {
         super(ModBlockEntities.TheForge_BE.get(), pPos, pBlockState);
         data = new ContainerData() {
@@ -59,31 +85,9 @@ public class TheForgeBlockEntity extends BlockEntity implements MenuProvider {
         };
     }
 
-    public final ItemStackHandler itemHandler = new ItemStackHandler(4) {
-        @Override
-        protected void onContentsChanged(int slot) {
-            setChanged();
-            if(!level.isClientSide()) {
-                level.sendBlockUpdated(getBlockPos(), getBlockState(), getBlockState(), 3);
-            }
-        }
-    };
-
-    private static final int INPUT_SLOT_ONE = 0;
-    private static final int INPUT_SLOT_TWO = 1;
-    private static final int OUTPUT_SLOT = 2;
-    private static final int ENERGY_ITEM_SLOT = 3;
-
-    private LazyOptional<IItemHandler> lazyItemHandler = LazyOptional.empty();
-
-    protected final ContainerData data;
-    private int progress = 0;
-    private int maxProgress = 72;
-    private final int DEFAULT_MAX_PROGRESS = 72;
-
     @Override
     public Component getDisplayName() {
-        return Component.translatable("name.notenoughtoolsandarmor.the_forge");
+        return Component.translatable("name.notenoughtoolsandarmor.theforge");
     }
 
     @Nullable
@@ -118,8 +122,8 @@ public class TheForgeBlockEntity extends BlockEntity implements MenuProvider {
     @Override
     protected void saveAdditional(CompoundTag pTag, HolderLookup.Provider pRegistries) {
         pTag.put("inventory", itemHandler.serializeNBT(pRegistries));
-        pTag.putInt("the_forge.progress", progress);
-        pTag.putInt("the_forge.max_progress", maxProgress);
+        pTag.putInt("theforge.progress", progress);
+        pTag.putInt("theforge.max_progress", maxProgress);
 
         super.saveAdditional(pTag, pRegistries);
     }
@@ -129,8 +133,8 @@ public class TheForgeBlockEntity extends BlockEntity implements MenuProvider {
         super.loadAdditional(pTag, pRegistries);
 
         itemHandler.deserializeNBT(pRegistries, pTag.getCompound("inventory"));
-        progress = pTag.getInt("crystallizer.progress");
-        maxProgress = pTag.getInt("crystallizer.max_progress");
+        progress = pTag.getInt("theforge.progress");
+        maxProgress = pTag.getInt("theforge.max_progress");
     }
 
     public void drops() {
@@ -162,9 +166,11 @@ public class TheForgeBlockEntity extends BlockEntity implements MenuProvider {
     }
 
     private void craftItem() {
-        ItemStack output = new ItemStack(ModItems.OAK_LOG_CHESTPLATE.get());
+        Optional<RecipeHolder<TheForgeRecipe>> recipe = getCurrentRecipe();
+        ItemStack output = recipe.get().value().output;
 
         itemHandler.extractItem(INPUT_SLOT_ONE, 1, false);
+        itemHandler.extractItem(INPUT_SLOT_TWO, 1, false);
         itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(output.getItem(),
                 itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + output.getCount()));
     }
@@ -183,11 +189,18 @@ public class TheForgeBlockEntity extends BlockEntity implements MenuProvider {
     }
 
     private boolean hasRecipe() {
-        ItemStack input = new ItemStack(ModItems.OAK_LOG_HELMET.get());
-        ItemStack output = new ItemStack(ModItems.OAK_LOG_CHESTPLATE.get());
+        Optional<RecipeHolder<TheForgeRecipe>> recipe = getCurrentRecipe();
+        if(recipe.isEmpty()) {
+            return false;
+        }
 
-        return canInsertAmountIntoOutputSlot(output.getCount()) && canInsertItemIntoOutputSlot(output) &&
-                itemHandler.getStackInSlot(INPUT_SLOT_ONE).getItem() == input.getItem();
+        ItemStack output = recipe.get().value().getResultItem(null);
+        return canInsertAmountIntoOutputSlot(output.getCount()) && canInsertItemIntoOutputSlot(output);
+    }
+
+    private Optional<RecipeHolder<TheForgeRecipe>> getCurrentRecipe() {
+        return this.level.getRecipeManager()
+                .getRecipeFor(ModRecipes.TheForge_TYPE.get(), new TheForgeRecipeInput(itemHandler.getStackInSlot(INPUT_SLOT_ONE), itemHandler.getStackInSlot(INPUT_SLOT_TWO)), level);
     }
 
     private boolean canInsertItemIntoOutputSlot(ItemStack output) {
