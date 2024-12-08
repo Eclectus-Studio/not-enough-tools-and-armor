@@ -84,13 +84,9 @@ public class TheForgeRecipe implements Recipe<RecipeInput>{
                 ResourceLocation.parse(Main.MOD_ID);
 
         private final MapCodec<TheForgeRecipe> CODEC = RecordCodecBuilder.mapCodec((instance) -> {
-            return instance.group(CodecFix.ITEM_STACK_CODEC.fieldOf("result").forGetter((recipe) -> {
-                return recipe.output;
-            }), Ingredient.CODEC_NONEMPTY.fieldOf("ingredient").forGetter((recipe) -> {
-                return recipe.ingredient0;
-            }), Ingredient.CODEC_NONEMPTY.fieldOf("ingredientdos").forGetter((recipe) -> {
-                return recipe.ingredient1;
-            })).apply(instance, TheForgeRecipe::new);
+            return instance.group(CodecFix.ITEM_STACK_CODEC.fieldOf("result").forGetter((recipe) -> recipe.output),
+                    Ingredient.CODEC_NONEMPTY.fieldOf("ingredient").forGetter((recipe) -> recipe.ingredient0),
+                    Ingredient.CODEC_NONEMPTY.fieldOf("ingredient_two").forGetter((recipe) -> recipe.ingredient1)).apply(instance, TheForgeRecipe::new);
         });
 
         private final StreamCodec<RegistryFriendlyByteBuf, TheForgeRecipe> STREAM_CODEC = StreamCodec.of(

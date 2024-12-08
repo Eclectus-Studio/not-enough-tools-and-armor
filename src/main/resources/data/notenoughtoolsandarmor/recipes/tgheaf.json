@@ -3,7 +3,7 @@
   "ingredient": {
     "item": "minecraft:iron_ingot"
   },
-  "ingredientdos": {
+  "ingredient_two": {
     "item": "minecraft:gold_ingot"
   },
   "result": {
