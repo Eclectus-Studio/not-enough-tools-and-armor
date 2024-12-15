@@ -19,8 +19,6 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
-        this.tag(ModTags.Blocks.ACACIA_LOG_MINEABLE)
-                .add(Blocks.ANDESITE);
         /*
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.AZURITE_BLOCK.get())

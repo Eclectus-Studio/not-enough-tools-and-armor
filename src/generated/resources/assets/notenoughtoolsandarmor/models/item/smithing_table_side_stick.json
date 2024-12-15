@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "notenoughtoolsandarmor:item/smithing_table_side_stick"
+  }
+}

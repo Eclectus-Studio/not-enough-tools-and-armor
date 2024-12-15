@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "notenoughtoolsandarmor:item/daylight_detector_inverted_top_stick"
+  }
+}

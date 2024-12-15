@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "notenoughtoolsandarmor:item/barrel_top_open_stick"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "notenoughtoolsandarmor:item/verdant_froglight_side_stick"
+  }
+}

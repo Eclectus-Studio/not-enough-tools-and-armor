@@ -1,2 +1,8 @@
-// 1.21	2024-12-06T09:57:19.19725	Tags for minecraft:item mod id notenoughtoolsandarmor
+// 1.21	2024-12-14T16:16:42.449501	Tags for minecraft:item mod id notenoughtoolsandarmor
 04665c4f68d86a5dfe933ccb021bab555a45c17f data/minecraft/tags/item/trimmable_armor.json
+c8f5060317df7113fb6db58f94ea02c73af32c55 data/notenoughtoolsandarmor/tags/item/axes.json
+52ffe69e4eab07377f75f51901e777114985b69d data/notenoughtoolsandarmor/tags/item/hoes.json
+00331a02ace937531fef082e47d517f993bc1b2c data/notenoughtoolsandarmor/tags/item/pickaxes.json
+9086889c27b4f5a548e486c6d1ebd4790e8ad394 data/notenoughtoolsandarmor/tags/item/shovels.json
+0be1116a1f44bd3e578d64427c870a2120f2fd61 data/notenoughtoolsandarmor/tags/item/sticks.json
+a8d97a93bf627972202db47c89556e1a41dde98c data/notenoughtoolsandarmor/tags/item/swords.json

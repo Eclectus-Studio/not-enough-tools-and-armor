@@ -13,8 +13,6 @@ import org.minetrio1256.notenoughtoolsandarmor.items.tools.ToolItem.*;
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, Main.MOD_ID);
-    public static final RegistryObject<Item> OAK_LOG_STICK =ITEMS.register("oak_log_stick", () -> new Item(new Item.Properties()));
-
     public static final RegistryObject<Item> OAK_LOG_HELMET = ITEMS.register("oak_log_helmet",
             () -> new ArmorItem(ModArmorMaterials.OAK_LOG_ARMOR, ArmorItem.Type.HELMET, new Item.Properties()));
     public static final RegistryObject<Item> OAK_LOG_CHESTPLATE = ITEMS.register("oak_log_chestplate",
@@ -36,6 +34,8 @@ public class ModItems {
         shovel.load();
 
         sword.load();
+
+        StickItem.load();
 
         ITEMS.register(eventBus);
     }

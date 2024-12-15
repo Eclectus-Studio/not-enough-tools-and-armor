@@ -62,14 +62,6 @@ public class Main {
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
-        var recipeManager = event.getServer().getRecipeManager();
-        var recipes = recipeManager.getAllRecipesFor(ModRecipes.TheForge_TYPE.get());
-
-        LOGGER.info("Number of 'toolforging' recipes found: {}", recipes.size());
-        recipes.forEach(recipe -> {
-            LOGGER.info("Found recipe: {} | Inputs: {} + {} | Output: {}",
-                    recipe.id(), recipe.value().ingredient0, recipe.value().ingredient1, recipe.value().output);
-        });
     }
 
 

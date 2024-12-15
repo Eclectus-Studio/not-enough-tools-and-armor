@@ -17,7 +17,6 @@ import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.RecipeHolder;
-import net.minecraft.world.item.crafting.RecipeInput;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
@@ -41,7 +40,7 @@ public class TheForgeBlockEntity extends BlockEntity implements MenuProvider {
         @Override
         protected void onContentsChanged(int slot) {
             setChanged();
-            if(!level.isClientSide()) {
+            if (!level.isClientSide()) {
                 level.sendBlockUpdated(getBlockPos(), getBlockState(), getBlockState(), 3);
             }
         }
@@ -74,8 +73,10 @@ public class TheForgeBlockEntity extends BlockEntity implements MenuProvider {
             @Override
             public void set(int i, int value) {
                 switch (i) {
-                    case 0: TheForgeBlockEntity.this.progress = value;
-                    case 1: TheForgeBlockEntity.this.maxProgress = value;
+                    case 0:
+                        TheForgeBlockEntity.this.progress = value;
+                    case 1:
+                        TheForgeBlockEntity.this.maxProgress = value;
                 }
             }
 
@@ -99,8 +100,8 @@ public class TheForgeBlockEntity extends BlockEntity implements MenuProvider {
 
     @Override
     public @NotNull <T> LazyOptional<T> getCapability(@NotNull Capability<T> cap, @Nullable Direction side) {
-        if(cap == ForgeCapabilities.ITEM_HANDLER) {
-            if(side == null) {
+        if (cap == ForgeCapabilities.ITEM_HANDLER) {
+            if (side == null) {
                 return lazyItemHandler.cast();
             }
         }
@@ -148,7 +149,7 @@ public class TheForgeBlockEntity extends BlockEntity implements MenuProvider {
     }
 
     public void tick(Level level, BlockPos pPos, BlockState pState) {
-        if(hasRecipe(this) && isOutputSlotEmptyOrReceivable()) {
+        if(hasRecipe() && isOutputSlotEmptyOrReceivable()) {
             increaseCraftingProgress();
             setChanged(level, pPos, pState);
 
@@ -168,10 +169,10 @@ public class TheForgeBlockEntity extends BlockEntity implements MenuProvider {
 
     private void craftItem() {
         Optional<RecipeHolder<TheForgeRecipe>> recipe = getCurrentRecipe();
-        ItemStack output = recipe.get().value().output;
+        ItemStack output = recipe.get().value().output();
 
         itemHandler.extractItem(INPUT_SLOT_ONE, 1, false);
-        itemHandler.extractItem(INPUT_SLOT_TWO, 1, false);
+        itemHandler.extractItem(INPUT_SLOT_TWO,1,false);
         itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(output.getItem(),
                 itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + output.getCount()));
     }
@@ -189,48 +190,31 @@ public class TheForgeBlockEntity extends BlockEntity implements MenuProvider {
                 this.itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() < this.itemHandler.getStackInSlot(OUTPUT_SLOT).getMaxStackSize();
     }
 
-    private static boolean hasRecipe(TheForgeBlockEntity entity) {
-        Level level = entity.level;
-        SimpleContainer inventory = new SimpleContainer(entity.itemHandler.getSlots());
-        for (int i = 0; i < entity.itemHandler.getSlots(); i++) {
-            inventory.setItem(i, entity.itemHandler.getStackInSlot(i));
+    private boolean hasRecipe() {
+        Optional<RecipeHolder<TheForgeRecipe>> recipe = getCurrentRecipe();
+        if (recipe.isEmpty()) {
+            return false;
         }
 
-        Optional<RecipeHolder<TheForgeRecipe>> recipe = Optional.empty();
-        if (level != null) {
-            recipe = level.getRecipeManager().getRecipeFor(ModRecipes.TheForge_TYPE.get(), getRecipeInput(inventory), level);
-        }
-
-
-        return recipe.isPresent() && canInsertItemIntoOutputSlot(inventory) &&
-                canInsertItemIntoOutputSlot(inventory, recipe.get().value().output.copy().getItem().getDefaultInstance());
-    }
-
-    private static boolean canInsertItemIntoOutputSlot(SimpleContainer inventory) {
-        return inventory.getItem(2).getMaxStackSize() > inventory.getItem(2).getCount();
-    }
-
-    public static RecipeInput getRecipeInput(SimpleContainer inventory) {
-        return new RecipeInput() {
-            @Override
-            public ItemStack getItem(int index) {
-                return inventory.getItem(index).copy();
-            }
-
-            @Override
-            public int size() {
-                return inventory.getContainerSize();
-            }
-        };
+        ItemStack output = recipe.get().value().getResultItem(null);
+        return canInsertAmountIntoOutputSlot(output.getCount()) && canInsertItemIntoOutputSlot(output);
     }
 
     private Optional<RecipeHolder<TheForgeRecipe>> getCurrentRecipe() {
         return this.level.getRecipeManager()
-                .getRecipeFor(ModRecipes.TheForge_TYPE.get(), new TheForgeRecipeInput(itemHandler.getStackInSlot(INPUT_SLOT_ONE), itemHandler.getStackInSlot(INPUT_SLOT_TWO)), level);
+                .getRecipeFor(ModRecipes.TheForge_TYPE.get(), new TheForgeRecipeInput(itemHandler.getStackInSlot(INPUT_SLOT_ONE),
+                        itemHandler.getStackInSlot(INPUT_SLOT_TWO)), level);
     }
 
-    private static boolean canInsertItemIntoOutputSlot(SimpleContainer inventory, ItemStack stack) {
-        return inventory.getItem(2).getItem() == stack.getItem() || inventory.getItem(2).isEmpty();
+    private boolean canInsertItemIntoOutputSlot(ItemStack output) {
+        return itemHandler.getStackInSlot(OUTPUT_SLOT).isEmpty() || this.itemHandler.getStackInSlot(OUTPUT_SLOT).getItem() == output.getItem();
+    }
+
+    private boolean canInsertAmountIntoOutputSlot(int count) {
+        int maxCount = itemHandler.getStackInSlot(OUTPUT_SLOT).isEmpty() ? 64 : itemHandler.getStackInSlot(OUTPUT_SLOT).getMaxStackSize();
+        int currentCount = itemHandler.getStackInSlot(OUTPUT_SLOT).getCount();
+
+        return maxCount >= currentCount + count;
     }
 
     @Override

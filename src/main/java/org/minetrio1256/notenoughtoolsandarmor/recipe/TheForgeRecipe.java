@@ -13,84 +13,63 @@ import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.Level;
 import org.minetrio1256.notenoughtoolsandarmor.Main;
 
-@SuppressWarnings("deprecation")
-public class TheForgeRecipe implements Recipe<RecipeInput>{
-
-    public final ItemStack output;
-    public final Ingredient ingredient0;
-    public final Ingredient ingredient1;
-
-    public TheForgeRecipe(ItemStack output, Ingredient ingredient0, Ingredient ingredient1) {
-        this.output = output;
-        this.ingredient0 = ingredient0;
-        this.ingredient1 = ingredient1;
-    }
-    @Override
-    public ItemStack assemble(RecipeInput container, HolderLookup.Provider registries) {
-        return output;
-    }
-    @Override
-    public ItemStack getResultItem(HolderLookup.Provider registries) {
-        return output.copy();
-    }
-    public ItemStack getResultEmi(){
-        return output.copy();
-    }
-    @Override
-    public boolean matches(RecipeInput pContainer, Level pLevel) {
-        if(pLevel.isClientSide()) {
-            return false;
-        }
-        return ingredient0.test(pContainer.getItem(0)) && ingredient1.test(pContainer.getItem(1));
-    }
-    @Override
-    public boolean isSpecial() {
-        return true;
-    }
+public record TheForgeRecipe(Ingredient inputItem, Ingredient inputItem2, ItemStack output) implements Recipe<TheForgeRecipeInput> {
     @Override
     public NonNullList<Ingredient> getIngredients() {
-        NonNullList<Ingredient> ingredients = NonNullList.createWithCapacity(2);
-        ingredients.add(0, ingredient0);
-        ingredients.add(1, ingredient1);
-        return ingredients;
+        NonNullList<Ingredient> list = NonNullList.create();
+        list.add(inputItem);
+        list.add(inputItem2);
+        return list;
     }
+
     @Override
-    public boolean canCraftInDimensions(int pWidth, int pHeight) {
+    public boolean matches(TheForgeRecipeInput theForgeRecipeInput, Level level) {
+        if(level.isClientSide()) {
+            return false;
+        }
+
+        return inputItem.test(theForgeRecipeInput.getItem(0)) && inputItem2.test(theForgeRecipeInput.getItem(1));
+    }
+
+    @Override
+    public ItemStack assemble(TheForgeRecipeInput theForgeRecipeInput, HolderLookup.Provider provider) {
+        return output.copy();
+    }
+
+    @Override
+    public boolean canCraftInDimensions(int i, int i1) {
         return true;
     }
+
     @Override
-    public String getGroup() {
-        return "toolforging";
+    public ItemStack getResultItem(HolderLookup.Provider provider) {
+        return output;
     }
 
     @Override
     public RecipeSerializer<?> getSerializer() {
-        return Serializer.INSTANCE;
+        return ModRecipes.TheForge_SERIALIZER.get();
     }
+
     @Override
     public RecipeType<?> getType() {
-        return Type.INSTANCE;
+        return ModRecipes.TheForge_TYPE.get();
     }
-    public static final class Type implements RecipeType<TheForgeRecipe> {
-        private Type() { }
-        public static final Type INSTANCE = new Type();
-        public static final String ID =
-                Main.MOD_ID;
-    }
-    public static final class Serializer implements RecipeSerializer<TheForgeRecipe> {
-        public Serializer() {}
-        public static final Serializer INSTANCE = new Serializer();
-        public static final ResourceLocation ID =
-                ResourceLocation.parse(Main.MOD_ID);
 
-        private final MapCodec<TheForgeRecipe> CODEC = RecordCodecBuilder.mapCodec((instance) -> {
-            return instance.group(CodecFix.ITEM_STACK_CODEC.fieldOf("result").forGetter((recipe) -> recipe.output),
-                    Ingredient.CODEC_NONEMPTY.fieldOf("ingredient").forGetter((recipe) -> recipe.ingredient0),
-                    Ingredient.CODEC_NONEMPTY.fieldOf("ingredient_two").forGetter((recipe) -> recipe.ingredient1)).apply(instance, TheForgeRecipe::new);
-        });
+    public static class Serializer implements RecipeSerializer<TheForgeRecipe> {
+        public static final MapCodec<TheForgeRecipe> CODEC = RecordCodecBuilder.mapCodec(inst -> inst.group(
+                Ingredient.CODEC_NONEMPTY.fieldOf("ingredient").forGetter(TheForgeRecipe::inputItem),
+                Ingredient.CODEC_NONEMPTY.fieldOf("ingredient2").forGetter(TheForgeRecipe::inputItem2),
+                net.minecraft.world.item.ItemStack.CODEC.fieldOf("result").forGetter(TheForgeRecipe::output)
+        ).apply(inst, TheForgeRecipe::new));
 
-        private final StreamCodec<RegistryFriendlyByteBuf, TheForgeRecipe> STREAM_CODEC = StreamCodec.of(
-                Serializer::write, Serializer::read);
+        public static final StreamCodec<RegistryFriendlyByteBuf, TheForgeRecipe> STREAM_CODEC =
+                StreamCodec.composite(
+                        Ingredient.CONTENTS_STREAM_CODEC, TheForgeRecipe::inputItem,
+                        Ingredient.CONTENTS_STREAM_CODEC, TheForgeRecipe::inputItem2,
+                        ItemStack.STREAM_CODEC, TheForgeRecipe::output,
+                        TheForgeRecipe::new);
+
 
         @Override
         public MapCodec<TheForgeRecipe> codec() {
@@ -101,23 +80,5 @@ public class TheForgeRecipe implements Recipe<RecipeInput>{
         public StreamCodec<RegistryFriendlyByteBuf, TheForgeRecipe> streamCodec() {
             return STREAM_CODEC;
         }
-
-        private static TheForgeRecipe read(RegistryFriendlyByteBuf  buffer) {
-            Ingredient input0 = Ingredient.CONTENTS_STREAM_CODEC.decode(buffer);
-            Ingredient input1 = Ingredient.CONTENTS_STREAM_CODEC.decode(buffer);
-            ItemStack output = ItemStack.OPTIONAL_STREAM_CODEC.decode(buffer);
-
-            return new TheForgeRecipe(output, input0, input1);
-        }
-
-        private static void write(RegistryFriendlyByteBuf  buffer, TheForgeRecipe recipe) {
-            Ingredient.CONTENTS_STREAM_CODEC.encode(buffer, recipe.ingredient0);
-            Ingredient.CONTENTS_STREAM_CODEC.encode(buffer, recipe.ingredient1);
-            ItemStack.OPTIONAL_STREAM_CODEC.encode(buffer, recipe.output);
-        }
     }
-    public class CodecFix {
-        public static final Codec<ItemStack> ITEM_STACK_CODEC = ItemStack.CODEC;
-    }
-
 }
