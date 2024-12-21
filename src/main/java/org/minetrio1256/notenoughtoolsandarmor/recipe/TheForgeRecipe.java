@@ -3,17 +3,19 @@ package org.minetrio1256.notenoughtoolsandarmor.recipe;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
+import io.netty.handler.ssl.util.InsecureTrustManagerFactory;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.NonNullList;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.component.CustomModelData;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.Level;
-import org.minetrio1256.notenoughtoolsandarmor.Main;
 
-public record TheForgeRecipe(Ingredient inputItem, Ingredient inputItem2, ItemStack output) implements Recipe<TheForgeRecipeInput> {
+public record TheForgeRecipe(Ingredient inputItem, Ingredient inputItem2, ItemStack output, int customModelData) implements Recipe<TheForgeRecipeInput> {
     @Override
     public NonNullList<Ingredient> getIngredients() {
         NonNullList<Ingredient> list = NonNullList.create();
@@ -33,8 +35,10 @@ public record TheForgeRecipe(Ingredient inputItem, Ingredient inputItem2, ItemSt
 
     @Override
     public ItemStack assemble(TheForgeRecipeInput theForgeRecipeInput, HolderLookup.Provider provider) {
-        return output.copy();
+        ItemStack result = output.copy();
+        return result;
     }
+
 
     @Override
     public boolean canCraftInDimensions(int i, int i1) {
@@ -50,7 +54,6 @@ public record TheForgeRecipe(Ingredient inputItem, Ingredient inputItem2, ItemSt
     public RecipeSerializer<?> getSerializer() {
         return ModRecipes.TheForge_SERIALIZER.get();
     }
-
     @Override
     public RecipeType<?> getType() {
         return ModRecipes.TheForge_TYPE.get();
@@ -60,7 +63,8 @@ public record TheForgeRecipe(Ingredient inputItem, Ingredient inputItem2, ItemSt
         public static final MapCodec<TheForgeRecipe> CODEC = RecordCodecBuilder.mapCodec(inst -> inst.group(
                 Ingredient.CODEC_NONEMPTY.fieldOf("ingredient").forGetter(TheForgeRecipe::inputItem),
                 Ingredient.CODEC_NONEMPTY.fieldOf("ingredient2").forGetter(TheForgeRecipe::inputItem2),
-                net.minecraft.world.item.ItemStack.CODEC.fieldOf("result").forGetter(TheForgeRecipe::output)
+                net.minecraft.world.item.ItemStack.CODEC.fieldOf("result").forGetter(TheForgeRecipe::output),
+                CODEC.fieldOf("custommodel").forGetter(TheForgeRecipe::customModelData)
         ).apply(inst, TheForgeRecipe::new));
 
         public static final StreamCodec<RegistryFriendlyByteBuf, TheForgeRecipe> STREAM_CODEC =

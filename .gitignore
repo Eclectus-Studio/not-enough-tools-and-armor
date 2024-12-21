@@ -1,4 +1,4 @@
-./run
-./run-data
-./build
-./.idea
+./run/
+./run-data/
+./build/
+./.idea/

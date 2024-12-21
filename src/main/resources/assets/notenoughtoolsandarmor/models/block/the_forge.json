@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"1": "the_forge",
+		"1": "notenoughtoolsandarmor:block/the_forge",
 		"particle": "theforge"
 	},
 	"elements": [
