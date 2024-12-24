@@ -1,5 +1,6 @@
 package org.minetrio1256.notenoughtoolsandarmor.datagen;
 
+import com.mojang.logging.LogUtils;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
@@ -19,11 +20,13 @@ import org.minetrio1256.notenoughtoolsandarmor.Main;
 import org.minetrio1256.notenoughtoolsandarmor.items.ModItems;
 import org.minetrio1256.notenoughtoolsandarmor.items.StickItem;
 import org.minetrio1256.notenoughtoolsandarmor.items.tools.ToolItem.*;
+import org.slf4j.Logger;
 
 import java.util.LinkedHashMap;
 
 public class ModItemModelProvider extends ItemModelProvider {
     private static LinkedHashMap<ResourceKey<TrimMaterial>, Float> trimMaterials = new LinkedHashMap<>();
+    private static final Logger LOGGER = LogUtils.getLogger();
     static {
         trimMaterials.put(TrimMaterials.QUARTZ, 0.1F);
         trimMaterials.put(TrimMaterials.IRON, 0.2F);
@@ -3649,6 +3652,7 @@ public class ModItemModelProvider extends ItemModelProvider {
                     .end();
         }
         System.gc();
+        LOGGER.debug(item.getId().getPath());
 
         return builder; // Ensure this builder is returned and registered by the data generator
     }
