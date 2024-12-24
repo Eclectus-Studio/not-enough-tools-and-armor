@@ -24,11 +24,11 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
-       // this.tag(ItemTags.TRIMMABLE_ARMOR)
-         //       .add(ModItems.OAK_LOG_BOOTS.get())
-           //     .add(ModItems.OAK_LOG_LEGGINGS.get())
-             //   .add(ModItems.OAK_LOG_CHESTPLATE.get())
-               // .add(ModItems.OAK_LOG_HELMET.get());
+       this.tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.OAK_LOG_BOOTS.get())
+                .add(ModItems.OAK_LOG_LEGGINGS.get())
+                .add(ModItems.OAK_LOG_CHESTPLATE.get())
+                .add(ModItems.OAK_LOG_HELMET.get());
         this.tag(ModTags.Items.AXES)
                 .add(axe.ACACIA_LOG_AXE.get())
                 .add(axe.ACACIA_LOG_TOP_AXE.get())
