@@ -43,16 +43,16 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        trimmedArmorItem(ModItems.OAK_LOG_HELMET);
-        trimmedArmorItem(ModItems.OAK_LOG_CHESTPLATE);
-        trimmedArmorItem(ModItems.OAK_LOG_LEGGINGS);
-        trimmedArmorItem(ModItems.OAK_LOG_BOOTS);
+        //trimmedArmorItem(ModItems.OAK_LOG_HELMET);
+        //trimmedArmorItem(ModItems.OAK_LOG_CHESTPLATE);
+        //trimmedArmorItem(ModItems.OAK_LOG_LEGGINGS);
+        //trimmedArmorItem(ModItems.OAK_LOG_BOOTS);
         registerSword();
-        //registerShovel();
-        //registerPickaxe();
-        //registerHoe();
-        //registerAxe();
-        //registerStick();
+        registerShovel();
+        registerPickaxe();
+        registerHoe();
+        registerAxe();
+        registerStick();
     }
     private void registerSword() {
         modded_tool_itemItem(sword.ACACIA_LOG_SWORD);
