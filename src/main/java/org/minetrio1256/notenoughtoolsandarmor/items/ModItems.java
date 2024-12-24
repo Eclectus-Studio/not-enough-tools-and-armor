@@ -13,14 +13,14 @@ import org.minetrio1256.notenoughtoolsandarmor.items.tools.ToolItem.*;
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, Main.MOD_ID);
-    public static final RegistryObject<Item> OAK_LOG_HELMET = ITEMS.register("oak_log_helmet",
-            () -> new ArmorItem(ModArmorMaterials.OAK_LOG_ARMOR, ArmorItem.Type.HELMET, new Item.Properties()));
+    /*public static final RegistryObject<Item> OAK_LOG_HELMET = ITEMS.register("oak_log_helmet",
+        () -> new ArmorItem(ModArmorMaterials.OAK_LOG_ARMOR, ArmorItem.Type.HELMET, new Item.Properties()));
     public static final RegistryObject<Item> OAK_LOG_CHESTPLATE = ITEMS.register("oak_log_chestplate",
             () -> new ArmorItem(ModArmorMaterials.OAK_LOG_ARMOR, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
     public static final RegistryObject<Item> OAK_LOG_LEGGINGS = ITEMS.register("oak_log_leggings",
             () -> new ArmorItem(ModArmorMaterials.OAK_LOG_ARMOR, ArmorItem.Type.LEGGINGS, new Item.Properties()));
     public static final RegistryObject<Item> OAK_LOG_BOOTS = ITEMS.register("oak_log_boots",
-            () -> new ArmorItem(ModArmorMaterials.OAK_LOG_ARMOR, ArmorItem.Type.BOOTS, new Item.Properties()));
+            () -> new ArmorItem(ModArmorMaterials.OAK_LOG_ARMOR, ArmorItem.Type.BOOTS, new Item.Properties())); */
     public static final RegistryObject<Item> TEMPLATE = ModItems.ITEMS.register("template",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> TEMPLATE_PICKAXE = ModItems.ITEMS.register("template_pickaxe",
