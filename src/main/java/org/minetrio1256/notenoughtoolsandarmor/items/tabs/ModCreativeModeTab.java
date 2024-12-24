@@ -19,10 +19,10 @@ public class ModCreativeModeTab {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(Items.APPLE))
                     .title(Component.translatable("creativetab.main_tab"))
                     .displayItems((pParameters, pOutput) -> {
-                        pOutput.accept(ModItems.OAK_LOG_HELMET.get());
-                        pOutput.accept(ModItems.OAK_LOG_CHESTPLATE.get());
-                        pOutput.accept(ModItems.OAK_LOG_LEGGINGS.get());
-                        pOutput.accept(ModItems.OAK_LOG_BOOTS.get());
+                        //pOutput.accept(ModItems.OAK_LOG_HELMET.get());
+                        //pOutput.accept(ModItems.OAK_LOG_CHESTPLATE.get());
+                        //pOutput.accept(ModItems.OAK_LOG_LEGGINGS.get());
+                        //pOutput.accept(ModItems.OAK_LOG_BOOTS.get());
                     })
                     .build());
 
