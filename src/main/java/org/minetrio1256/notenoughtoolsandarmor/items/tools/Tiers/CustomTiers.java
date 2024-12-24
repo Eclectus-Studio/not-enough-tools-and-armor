@@ -14,8 +14,6 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 
-import org.minetrio1256.notenoughtoolsandarmor.items.McBlockCustomPart.McBlockPartItem;
-
 public enum CustomTiers implements Tier {
     OAK_LOG(BlockTags.INCORRECT_FOR_WOODEN_TOOL, 59, 2.0F, 0.0F, 15, () -> {
         return Ingredient.of(new ItemLike[]{Items.OAK_LOG});
@@ -41,9 +39,9 @@ public enum CustomTiers implements Tier {
     BIRCH_LOG(BlockTags.INCORRECT_FOR_WOODEN_TOOL, 59, 2.0F, 0.0F, 15, () -> {
         return Ingredient.of(new ItemLike[]{Items.BIRCH_LOG});
     }),
-    SPRUCE_LOG_TOP(BlockTags.INCORRECT_FOR_WOODEN_TOOL, 59, 2.0F, 0.0F, 15, () -> {
-        return Ingredient.of(new ItemLike[]{McBlockPartItem.SPRUCE_LOG_TOP.get()});
-    }),
+    //SPRUCE_LOG_TOP(BlockTags.INCORRECT_FOR_WOODEN_TOOL, 59, 2.0F, 0.0F, 15, () -> {
+      //  return Ingredient.of(new ItemLike[]{McBlockPartItem.SPRUCE_LOG_TOP.get()});
+    //}),
     WOOD(BlockTags.INCORRECT_FOR_WOODEN_TOOL, 59, 2.0F, 0.0F, 15, () -> {
         return Ingredient.of(ItemTags.PLANKS);
     }),
@@ -52,10 +50,10 @@ public enum CustomTiers implements Tier {
     }),
     IRON(BlockTags.INCORRECT_FOR_IRON_TOOL, 59, 2.0F, 0.0F, 15, () -> {
         return Ingredient.of(new ItemLike[]{Items.IRON_INGOT});
-    }),
-    ACACIA_LOG_TOP(BlockTags.INCORRECT_FOR_WOODEN_TOOL, 59, 2.0F, 0.0F, 15, () -> {
-        return Ingredient.of(new ItemLike[]{McBlockPartItem.BIRCH_LOG_TOP.get()});
     });
+    //ACACIA_LOG_TOP(BlockTags.INCORRECT_FOR_WOODEN_TOOL, 59, 2.0F, 0.0F, 15, () -> {
+      //  return Ingredient.of(new ItemLike[]{McBlockPartItem.BIRCH_LOG_TOP.get()});
+    //})
 
     private final TagKey<Block> incorrectBlocksForDrops;
     private final int uses;
