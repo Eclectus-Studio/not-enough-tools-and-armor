@@ -15,7 +15,7 @@ import net.minecraft.world.item.component.CustomModelData;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.Level;
 
-public record TheForgeRecipe(Ingredient inputItem, Ingredient inputItem2, ItemStack output, int customModelData) implements Recipe<TheForgeRecipeInput> {
+public record TheForgeRecipe(Ingredient inputItem, Ingredient inputItem2, ItemStack output) implements Recipe<TheForgeRecipeInput> {
     @Override
     public NonNullList<Ingredient> getIngredients() {
         NonNullList<Ingredient> list = NonNullList.create();
@@ -63,8 +63,7 @@ public record TheForgeRecipe(Ingredient inputItem, Ingredient inputItem2, ItemSt
         public static final MapCodec<TheForgeRecipe> CODEC = RecordCodecBuilder.mapCodec(inst -> inst.group(
                 Ingredient.CODEC_NONEMPTY.fieldOf("ingredient").forGetter(TheForgeRecipe::inputItem),
                 Ingredient.CODEC_NONEMPTY.fieldOf("ingredient2").forGetter(TheForgeRecipe::inputItem2),
-                net.minecraft.world.item.ItemStack.CODEC.fieldOf("result").forGetter(TheForgeRecipe::output),
-                CODEC.fieldOf("custommodel").forGetter(TheForgeRecipe::customModelData)
+                net.minecraft.world.item.ItemStack.CODEC.fieldOf("result").forGetter(TheForgeRecipe::output)
         ).apply(inst, TheForgeRecipe::new));
 
         public static final StreamCodec<RegistryFriendlyByteBuf, TheForgeRecipe> STREAM_CODEC =

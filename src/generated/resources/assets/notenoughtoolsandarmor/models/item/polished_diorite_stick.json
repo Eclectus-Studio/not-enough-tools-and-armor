@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "notenoughtoolsandarmor:item/polished_diorite_stick"
-  }
-}

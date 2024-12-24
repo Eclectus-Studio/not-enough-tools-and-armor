@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "notenoughtoolsandarmor:item/chiseled_tuff_bricks_top_stick"
-  }
-}

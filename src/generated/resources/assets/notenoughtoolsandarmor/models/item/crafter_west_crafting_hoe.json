@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/handheld",
-  "textures": {
-    "layer0": "notenoughtoolsandarmor:item/crafter_west_crafting_hoe"
-  }
-}

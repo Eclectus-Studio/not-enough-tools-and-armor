@@ -1,29 +1,24 @@
-[14déc.2024 16:15:51.431] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_userdev_data, --assetIndex, 17, --assetsDir, /Users/paul/.gradle/caches/forge_gradle/assets, --gameDir, ., --mod, notenoughtoolsandarmor, --all, --output, /Users/paul/IdeaProjects/notenoughtoolsandarmor/src/generated/resources, --existing, /Users/paul/IdeaProjects/notenoughtoolsandarmor/src/main/resources]
-[14déc.2024 16:15:51.440] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 21.0.1+12-LTS-29
-[14déc.2024 16:15:51.448] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.2.1 starting: java version 21.0.1 by Oracle Corporation; OS Mac OS X arch x86_64 version 13.7.2
-[14déc.2024 16:15:52.366] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forge_userdev_data
-[14déc.2024 16:15:52.686] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=jar:file:///Users/paul/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.7/8ab114ac385e6dbdad5efafe28aba4df8120915f/mixin-0.8.7.jar!/ Service=ModLauncher Env=UNKNOWN
-[14déc.2024 16:16:08.627] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[14déc.2024 16:16:10.991] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forge_userdev_data' with arguments [--gameDir, ., --assetsDir, /Users/paul/.gradle/caches/forge_gradle/assets, --assetIndex, 17, --mod, notenoughtoolsandarmor, --all, --output, /Users/paul/IdeaProjects/notenoughtoolsandarmor/src/generated/resources, --existing, /Users/paul/IdeaProjects/notenoughtoolsandarmor/src/main/resources]
-[14déc.2024 16:16:37.416] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 51.0.33, for MC 1.21 with MCP 20240613.102039
-[14déc.2024 16:16:37.487] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v51.0.33 Initialized
-[14déc.2024 16:16:37.692] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Opening jdk.naming.dns/com.sun.jndi.dns to java.naming
-[14déc.2024 16:16:39.301] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [notenoughtoolsandarmor]
-[14déc.2024 16:16:39.614] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/Users/paul/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21-51.0.33_mapped_parchment_2024.07.28-1.21/forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21.jar%230!/assets/.mcassetsroot' uses unexpected schema
-[14déc.2024 16:16:39.614] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/Users/paul/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21-51.0.33_mapped_parchment_2024.07.28-1.21/forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21.jar%230!/data/.mcassetsroot' uses unexpected schema
-[14déc.2024 16:16:41.317] [main/WARN] [net.minecraft.server.packs.PathPackResources/]: Non [a-z0-9_.-] character in namespace .DS_Store in pack /Users/paul/IdeaProjects/notenoughtoolsandarmor/src/main/resources, ignoring
-[14déc.2024 16:16:41.445] [main/WARN] [net.minecraft.server.packs.PathPackResources/]: Non [a-z0-9_.-] character in namespace .DS_Store in pack /Users/paul/IdeaProjects/notenoughtoolsandarmor/src/main/resources, ignoring
-[14déc.2024 16:16:41.732] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
-[14déc.2024 16:16:41.734] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 1 ms
-[14déc.2024 16:16:41.734] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
-[14déc.2024 16:16:41.795] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 60 ms
-[14déc.2024 16:16:41.795] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id notenoughtoolsandarmor
-[14déc.2024 16:16:41.806] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id notenoughtoolsandarmor finished after 11 ms
-[14déc.2024 16:16:41.807] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id notenoughtoolsandarmor
-[14déc.2024 16:16:41.868] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id notenoughtoolsandarmor finished after 61 ms
-[14déc.2024 16:16:41.869] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: notenoughtoolsandarmor
-[14déc.2024 16:16:42.304] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: notenoughtoolsandarmor finished after 435 ms
-[14déc.2024 16:16:42.305] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: notenoughtoolsandarmor
-[14déc.2024 16:16:42.305] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: notenoughtoolsandarmor finished after 0 ms
-[14déc.2024 16:16:42.305] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 573 ms
-[14déc.2024 16:16:43.276] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 3526, old count: 3521, new count: 3527, removed stale: 0, written: 6
+[24déc.2024 14:20:49.644] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_userdev_data, --assetIndex, 17, --assetsDir, /Users/paul/.gradle/caches/forge_gradle/assets, --gameDir, ., --mod, notenoughtoolsandarmor, --all, --output, /Users/paul/IdeaProjects/notenoughtoolsandarmor/src/generated/resources, --existing, /Users/paul/IdeaProjects/notenoughtoolsandarmor/src/main/resources]
+[24déc.2024 14:20:49.654] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 21.0.1+12-LTS-29
+[24déc.2024 14:20:49.656] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.2.1 starting: java version 21.0.1 by Oracle Corporation; OS Mac OS X arch x86_64 version 13.7.2
+[24déc.2024 14:20:49.851] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forge_userdev_data
+[24déc.2024 14:20:50.214] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=jar:file:///Users/paul/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.7/8ab114ac385e6dbdad5efafe28aba4df8120915f/mixin-0.8.7.jar!/ Service=ModLauncher Env=UNKNOWN
+[24déc.2024 14:20:51.777] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[24déc.2024 14:20:52.681] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forge_userdev_data' with arguments [--gameDir, ., --assetsDir, /Users/paul/.gradle/caches/forge_gradle/assets, --assetIndex, 17, --mod, notenoughtoolsandarmor, --all, --output, /Users/paul/IdeaProjects/notenoughtoolsandarmor/src/generated/resources, --existing, /Users/paul/IdeaProjects/notenoughtoolsandarmor/src/main/resources]
+[24déc.2024 14:21:01.442] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 51.0.33, for MC 1.21 with MCP 20240613.102039
+[24déc.2024 14:21:01.486] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v51.0.33 Initialized
+[24déc.2024 14:21:01.556] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Opening jdk.naming.dns/com.sun.jndi.dns to java.naming
+[24déc.2024 14:21:02.795] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [notenoughtoolsandarmor]
+[24déc.2024 14:21:02.902] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/Users/paul/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21-51.0.33_mapped_parchment_2024.07.28-1.21/forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21.jar%230!/assets/.mcassetsroot' uses unexpected schema
+[24déc.2024 14:21:02.902] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/Users/paul/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21-51.0.33_mapped_parchment_2024.07.28-1.21/forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21.jar%230!/data/.mcassetsroot' uses unexpected schema
+[24déc.2024 14:21:03.893] [main/WARN] [net.minecraft.server.packs.PathPackResources/]: Non [a-z0-9_.-] character in namespace .DS_Store in pack /Users/paul/IdeaProjects/notenoughtoolsandarmor/src/main/resources, ignoring
+[24déc.2024 14:21:03.990] [main/WARN] [net.minecraft.server.packs.PathPackResources/]: Non [a-z0-9_.-] character in namespace .DS_Store in pack /Users/paul/IdeaProjects/notenoughtoolsandarmor/src/main/resources, ignoring
+[24déc.2024 14:21:04.293] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[24déc.2024 14:21:04.295] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 2 ms
+[24déc.2024 14:21:04.295] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
+[24déc.2024 14:21:04.352] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 56 ms
+[24déc.2024 14:21:04.352] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id notenoughtoolsandarmor
+[24déc.2024 14:21:04.354] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id notenoughtoolsandarmor finished after 1 ms
+[24déc.2024 14:21:04.354] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id notenoughtoolsandarmor
+[24déc.2024 14:21:04.413] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id notenoughtoolsandarmor finished after 58 ms
+[24déc.2024 14:21:04.413] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: notenoughtoolsandarmor

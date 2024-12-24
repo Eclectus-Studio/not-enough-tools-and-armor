@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "notenoughtoolsandarmor:item/bee_nest_bottom_stick"
-  }
-}

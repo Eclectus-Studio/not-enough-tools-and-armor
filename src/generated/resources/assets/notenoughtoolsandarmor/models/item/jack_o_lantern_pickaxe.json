@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/handheld",
-  "textures": {
-    "layer0": "notenoughtoolsandarmor:item/jack_o_lantern_pickaxe"
-  }
-}

@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "notenoughtoolsandarmor:item/mushroom_block_inside_stick"
-  }
-}

@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/handheld",
-  "textures": {
-    "layer0": "notenoughtoolsandarmor:item/structure_block_corner_sword"
-  }
-}

@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/handheld",
-  "textures": {
-    "layer0": "notenoughtoolsandarmor:item/respawn_anchor_side4_axe"
-  }
-}

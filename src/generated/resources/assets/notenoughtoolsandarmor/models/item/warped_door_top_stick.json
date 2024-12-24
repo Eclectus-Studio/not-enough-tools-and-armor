@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "notenoughtoolsandarmor:item/warped_door_top_stick"
-  }
-}

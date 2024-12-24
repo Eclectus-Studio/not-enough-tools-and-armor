@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/handheld",
-  "textures": {
-    "layer0": "notenoughtoolsandarmor:item/dirt_path_top_axe"
-  }
-}

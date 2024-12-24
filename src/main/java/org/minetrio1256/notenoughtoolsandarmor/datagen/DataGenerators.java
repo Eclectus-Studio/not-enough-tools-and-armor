@@ -9,7 +9,6 @@ import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import org.minetrio1256.notenoughtoolsandarmor.Main;
-import org.minetrio1256.notenoughtoolsandarmor.datagen.tools.*;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -17,6 +16,7 @@ import java.util.concurrent.CompletableFuture;
 public class DataGenerators {
     @SubscribeEvent
     public static void gatherData(GatherDataEvent event) {
+        StickCustomModelData.loadStick();
         DataGenerator generator = event.getGenerator();
         PackOutput packOutput = generator.getPackOutput();
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
