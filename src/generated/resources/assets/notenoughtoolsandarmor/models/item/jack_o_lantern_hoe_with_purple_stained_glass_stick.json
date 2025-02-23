@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "notenoughtoolsandarmor:item/purple_stained_glass_stick",
+    "layer1": "notenoughtoolsandarmor:item/jack_o_lantern_hoe"
+  }
+}

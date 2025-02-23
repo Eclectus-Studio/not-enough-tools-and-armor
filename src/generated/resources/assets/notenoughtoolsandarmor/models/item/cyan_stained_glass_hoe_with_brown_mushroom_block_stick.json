@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "notenoughtoolsandarmor:item/brown_mushroom_block_stick",
+    "layer1": "notenoughtoolsandarmor:item/cyan_stained_glass_hoe"
+  }
+}

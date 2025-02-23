@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "notenoughtoolsandarmor:item/glow_item_frame_stick",
+    "layer1": "notenoughtoolsandarmor:item/green_glazed_terracotta_sword"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "notenoughtoolsandarmor:item/lime_stained_glass_stick",
+    "layer1": "notenoughtoolsandarmor:item/brain_coral_block_axe"
+  }
+}

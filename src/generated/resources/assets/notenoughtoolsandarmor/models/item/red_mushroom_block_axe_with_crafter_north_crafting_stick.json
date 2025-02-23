@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "notenoughtoolsandarmor:item/crafter_north_crafting_stick",
+    "layer1": "notenoughtoolsandarmor:item/red_mushroom_block_axe"
+  }
+}

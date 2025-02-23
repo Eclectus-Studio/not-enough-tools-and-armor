@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "notenoughtoolsandarmor:item/jungle_log_top_stick",
+    "layer1": "notenoughtoolsandarmor:item/red_sandstone_bottom_sword"
+  }
+}

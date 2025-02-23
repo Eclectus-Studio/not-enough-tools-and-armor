@@ -1,0 +1,3482 @@
+{
+  "parent": "minecraft:item/handheld",
+  "overrides": [
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_acacia_log_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 1.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_acacia_log_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 2.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_acacia_planks_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 3.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_amethyst_block_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 4.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_ancient_debris_side_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 5.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_ancient_debris_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 6.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_andesite_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 7.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_anvil_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 8.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_azalea_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 9.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_bamboo_block_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 10.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_bamboo_block_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 11.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_bamboo_door_bottom_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 12.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_bamboo_fence_gate_particle_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 13.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_bamboo_fence_particle_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 14.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_bamboo_mosaic_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 15.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_bamboo_planks_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 16.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_bamboo_stalk_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 17.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_barrel_bottom_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 18.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_barrel_side_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 19.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_barrel_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 20.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_barrel_top_open_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 21.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_basalt_side_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 22.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_basalt_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 23.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_beacon_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 24.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_bedrock_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 25.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_bee_nest_bottom_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 26.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_bee_nest_front_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 27.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_bee_nest_front_honey_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 28.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_bee_nest_side_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 29.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_bee_nest_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 30.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_beehive_end_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 31.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_beehive_front_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 32.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_beehive_front_honey_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 33.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_beehive_side_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 34.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_birch_door_bottom_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 35.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_birch_door_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 36.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_birch_log_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 37.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_birch_log_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 38.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_birch_planks_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 39.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_birch_trapdoor_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 40.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_black_concrete_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 41.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_black_concrete_powder_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 42.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_black_glazed_terracotta_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 43.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_black_shulker_box_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 44.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_black_stained_glass_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 45.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_black_terracotta_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 46.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_black_wool_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 47.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_blackstone_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 48.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_blackstone_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 49.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_blast_furnace_front_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 50.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_blast_furnace_side_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 51.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_blast_furnace_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 52.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_blue_concrete_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 53.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_blue_concrete_powder_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 54.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_blue_glazed_terracotta_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 55.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_blue_ice_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 56.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_blue_shulker_box_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 57.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_blue_stained_glass_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 58.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_blue_terracotta_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 59.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_blue_wool_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 60.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_bone_block_side_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 61.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_bone_block_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 62.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_bookshelf_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 63.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_brain_coral_block_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 64.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_brewing_stand_base_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 65.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_bricks_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 66.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_brown_concrete_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 67.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_brown_concrete_powder_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 68.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_brown_glazed_terracotta_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 69.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_brown_mushroom_block_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 70.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_brown_shulker_box_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 71.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_brown_stained_glass_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 72.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_brown_terracotta_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 73.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_brown_wool_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 74.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_bubble_coral_block_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 75.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_budding_amethyst_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 76.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_cactus_bottom_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 77.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_cactus_side_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 78.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_cactus_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 79.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_cake_bottom_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 80.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_cake_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 81.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_calcite_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 82.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_calibrated_sculk_sensor_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 83.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_cartography_table_side1_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 84.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_cartography_table_side2_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 85.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_cartography_table_side3_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 86.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_cartography_table_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 87.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_carved_pumpkin_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 88.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_cauldron_inner_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 89.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_cherry_door_bottom_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 90.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_cherry_log_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 91.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_cherry_log_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 92.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_cherry_planks_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 93.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_chipped_anvil_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 94.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_chiseled_bookshelf_empty_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 95.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_chiseled_bookshelf_occupied_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 96.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_chiseled_bookshelf_side_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 97.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_chiseled_bookshelf_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 98.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_chiseled_copper_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 99.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_chiseled_deepslate_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 100.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_chiseled_nether_bricks_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 101.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_chiseled_polished_blackstone_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 102.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_chiseled_quartz_block_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 103.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_chiseled_quartz_block_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 104.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_chiseled_red_sandstone_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 105.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_chiseled_sandstone_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 106.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_chiseled_stone_bricks_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 107.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_chiseled_tuff_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 108.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_chiseled_tuff_bricks_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 109.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_chiseled_tuff_bricks_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 110.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_chiseled_tuff_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 111.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_chorus_flower_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 112.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_chorus_flower_dead_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 113.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_chorus_plant_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 114.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_clay_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 115.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_coal_block_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 116.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_coal_ore_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 117.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_coarse_dirt_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 118.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_cobbled_deepslate_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 119.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_cobblestone_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 120.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_comparator_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 121.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_comparator_on_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 122.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_composter_bottom_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 123.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_composter_side_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 124.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_copper_block_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 125.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_copper_bulb_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 126.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_copper_bulb_lit_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 127.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_copper_bulb_lit_powered_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 128.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_copper_bulb_powered_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 129.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_copper_door_bottom_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 130.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_copper_ore_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 131.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_copper_trapdoor_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 132.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_cracked_deepslate_bricks_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 133.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_cracked_deepslate_tiles_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 134.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_cracked_nether_bricks_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 135.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_cracked_polished_blackstone_bricks_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 136.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_cracked_stone_bricks_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 137.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_crafter_bottom_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 138.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_crafter_east_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 139.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_crafter_east_crafting_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 140.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_crafter_east_triggered_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 141.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_crafter_north_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 142.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_crafter_north_crafting_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 143.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_crafter_south_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 144.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_crafter_south_triggered_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 145.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_crafter_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 146.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_crafter_top_crafting_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 147.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_crafter_top_triggered_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 148.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_crafter_west_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 149.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_crafter_west_crafting_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 150.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_crafter_west_triggered_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 151.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_crafting_table_front_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 152.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_crafting_table_side_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 153.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_crafting_table_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 154.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_crimson_door_bottom_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 155.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_crimson_door_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 156.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_crimson_nylium_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 157.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_crimson_nylium_side_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 158.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_crimson_planks_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 159.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_crimson_stem_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 160.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_crying_obsidian_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 161.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_cut_copper_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 162.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_cut_red_sandstone_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 163.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_cut_sandstone_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 164.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_cyan_concrete_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 165.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_cyan_concrete_powder_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 166.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_cyan_glazed_terracotta_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 167.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_cyan_shulker_box_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 168.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_cyan_stained_glass_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 169.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_cyan_terracotta_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 170.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_cyan_wool_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 171.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_dark_oak_door_bottom_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 172.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_dark_oak_door_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 173.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_dark_oak_log_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 174.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_dark_oak_log_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 175.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_dark_oak_planks_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 176.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_dark_oak_trapdoor_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 177.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_dark_prismarine_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 178.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_daylight_detector_inverted_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 179.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_daylight_detector_side_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 180.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_daylight_detector_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 181.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_debug_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 182.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_debug2_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 183.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_deepslate_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 184.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_deepslate_bricks_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 185.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_deepslate_coal_ore_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 186.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_deepslate_copper_ore_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 187.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_deepslate_diamond_ore_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 188.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_deepslate_emerald_ore_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 189.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_deepslate_gold_ore_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 190.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_deepslate_iron_ore_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 191.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_deepslate_lapis_ore_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 192.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_deepslate_redstone_ore_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 193.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_deepslate_tiles_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 194.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_deepslate_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 195.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_diamond_block_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 196.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_diamond_ore_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 197.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_diorite_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 198.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_dirt_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 199.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_dirt_path_side_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 200.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_dirt_path_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 201.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_dispenser_front_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 202.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_dispenser_front_vertical_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 203.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_dragon_egg_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 204.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_dried_kelp_bottom_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 205.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_dried_kelp_side_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 206.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_dried_kelp_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 207.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_dripstone_block_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 208.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_dropper_front_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 209.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_dropper_front_vertical_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 210.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_emerald_block_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 211.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_emerald_ore_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 212.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_enchanting_table_bottom_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 213.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_enchanting_table_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 214.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_end_portal_frame_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 215.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_end_stone_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 216.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_end_stone_bricks_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 217.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_exposed_chiseled_copper_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 218.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_exposed_copper_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 219.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_exposed_copper_bulb_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 220.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_exposed_copper_bulb_lit_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 221.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_exposed_copper_bulb_lit_powered_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 222.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_exposed_copper_bulb_powered_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 223.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_exposed_copper_door_bottom_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 224.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_exposed_cut_copper_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 225.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_farmland_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 226.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_farmland_moist_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 227.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_fire_coral_block_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 228.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_fletching_table_front_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 229.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_fletching_table_side_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 230.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_fletching_table_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 231.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_frosted_ice_0_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 232.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_frosted_ice_1_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 233.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_frosted_ice_2_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 234.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_frosted_ice_3_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 235.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_furnace_front_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 236.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_furnace_front_on_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 237.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_furnace_side_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 238.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_furnace_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 239.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_gilded_blackstone_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 240.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_glow_item_frame_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 241.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_glowstone_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 242.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_gold_block_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 243.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_gold_ore_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 244.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_granite_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 245.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_grass_block_side_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 246.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_grass_block_snow_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 247.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_gravel_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 248.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_gray_concrete_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 249.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_gray_concrete_powder_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 250.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_gray_glazed_terracotta_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 251.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_gray_shulker_box_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 252.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_gray_stained_glass_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 253.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_gray_terracotta_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 254.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_gray_wool_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 255.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_green_concrete_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 256.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_green_concrete_powder_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 257.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_green_glazed_terracotta_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 258.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_green_shulker_box_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 259.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_green_stained_glass_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 260.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_green_terracotta_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 261.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_green_wool_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 262.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_hay_block_side_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 263.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_hay_block_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 264.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_honey_block_bottom_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 265.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_honey_block_side_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 266.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_honey_block_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 267.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_honeycomb_block_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 268.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_hopper_inside_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 269.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_hopper_outside_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 270.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_horn_coral_block_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 271.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_ice_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 272.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_iron_block_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 273.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_iron_door_bottom_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 274.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_iron_ore_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 275.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_item_frame_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 276.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_jack_o_lantern_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 277.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_jigsaw_bottom_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 278.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_jigsaw_lock_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 279.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_jigsaw_side_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 280.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_jigsaw_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 281.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_jukebox_side_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 282.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_jukebox_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 283.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_jungle_door_bottom_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 284.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_jungle_log_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 285.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_jungle_log_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 286.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_jungle_planks_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 287.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_lapis_block_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 288.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_lapis_ore_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 289.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_lectern_base_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 290.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_lectern_front_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 291.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_lectern_sides_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 292.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_lectern_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 293.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_light_blue_concrete_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 294.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_light_blue_concrete_powder_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 295.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_light_blue_glazed_terracotta_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 296.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_light_blue_shulker_box_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 297.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_light_blue_stained_glass_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 298.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_light_blue_terracotta_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 299.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_light_blue_wool_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 300.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_light_gray_concrete_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 301.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_light_gray_concrete_powder_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 302.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_light_gray_glazed_terracotta_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 303.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_light_gray_shulker_box_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 304.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_light_gray_terracotta_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 305.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_light_gray_wool_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 306.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_lime_concrete_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 307.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_lime_concrete_powder_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 308.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_lime_glazed_terracotta_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 309.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_lime_shulker_box_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 310.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_lime_stained_glass_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 311.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_lime_terracotta_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 312.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_lime_wool_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 313.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_lodestone_side_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 314.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_lodestone_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 315.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_loom_bottom_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 316.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_loom_front_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 317.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_loom_side_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 318.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_loom_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 319.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_magenta_concrete_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 320.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_magenta_concrete_powder_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 321.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_magenta_glazed_terracotta_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 322.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_magenta_shulker_box_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 323.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_magenta_stained_glass_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 324.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_magenta_terracotta_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 325.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_magenta_wool_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 326.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_mangrove_door_bottom_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 327.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_mangrove_door_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 328.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_mangrove_log_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 329.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_mangrove_log_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 330.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_mangrove_planks_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 331.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_mangrove_trapdoor_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 332.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_melon_side_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 333.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_melon_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 334.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_moss_block_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 335.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_mossy_cobblestone_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 336.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_mossy_stone_bricks_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 337.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_mud_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 338.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_mud_bricks_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 339.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_muddy_mangrove_roots_side_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 340.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_muddy_mangrove_roots_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 341.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_mushroom_block_inside_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 342.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_mushroom_stem_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 343.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_mycelium_side_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 344.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_mycelium_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 345.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_nether_bricks_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 346.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_nether_gold_ore_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 347.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_nether_quartz_ore_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 348.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_netherite_block_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 349.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_netherrack_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 350.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_note_block_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 351.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_oak_door_bottom_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 352.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_oak_leaves_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 353.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_oak_log_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 354.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_oak_log_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 355.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_oak_planks_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 356.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_observer_back_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 357.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_observer_back_on_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 358.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_observer_front_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 359.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_observer_side_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 360.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_observer_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 361.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_obsidian_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 362.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_ochre_froglight_side_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 363.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_ochre_froglight_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 364.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_orange_concrete_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 365.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_orange_concrete_powder_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 366.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_orange_glazed_terracotta_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 367.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_orange_shulker_box_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 368.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_orange_stained_glass_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 369.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_orange_terracotta_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 370.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_orange_wool_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 371.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_oxidized_chiseled_copper_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 372.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_oxidized_copper_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 373.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_oxidized_copper_bulb_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 374.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_oxidized_copper_bulb_lit_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 375.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_oxidized_copper_bulb_lit_powered_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 376.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_oxidized_copper_bulb_powered_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 377.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_oxidized_copper_door_bottom_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 378.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_oxidized_cut_copper_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 379.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_packed_ice_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 380.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_packed_mud_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 381.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_pearlescent_froglight_side_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 382.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_pearlescent_froglight_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 383.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_pink_concrete_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 384.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_pink_concrete_powder_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 385.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_pink_glazed_terracotta_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 386.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_pink_shulker_box_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 387.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_pink_stained_glass_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 388.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_pink_terracotta_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 389.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_pink_wool_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 390.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_piston_bottom_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 391.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_piston_inner_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 392.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_piston_side_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 393.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_piston_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 394.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_piston_top_sticky_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 395.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_podzol_side_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 396.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_podzol_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 397.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_polished_andesite_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 398.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_polished_basalt_side_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 399.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_polished_basalt_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 400.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_polished_blackstone_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 401.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_polished_blackstone_bricks_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 402.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_polished_deepslate_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 403.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_polished_diorite_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 404.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_polished_granite_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 405.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_polished_tuff_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 406.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_powder_snow_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 407.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_prismarine_bricks_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 408.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_pumpkin_side_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 409.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_pumpkin_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 410.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_purple_concrete_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 411.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_purple_concrete_powder_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 412.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_purple_glazed_terracotta_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 413.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_purple_shulker_box_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 414.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_purple_stained_glass_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 415.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_purple_terracotta_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 416.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_purple_wool_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 417.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_purpur_block_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 418.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_purpur_pillar_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 419.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_purpur_pillar_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 420.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_quartz_block_bottom_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 421.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_quartz_block_side_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 422.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_quartz_block_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 423.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_quartz_bricks_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 424.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_quartz_pillar_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 425.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_quartz_pillar_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 426.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_raw_copper_block_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 427.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_raw_gold_block_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 428.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_raw_iron_block_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 429.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_red_concrete_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 430.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_red_concrete_powder_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 431.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_red_glazed_terracotta_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 432.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_red_mushroom_block_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 433.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_red_nether_bricks_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 434.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_red_sand_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 435.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_red_sandstone_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 436.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_red_sandstone_bottom_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 437.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_red_sandstone_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 438.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_red_shulker_box_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 439.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_red_stained_glass_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 440.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_red_terracotta_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 441.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_red_wool_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 442.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_redstone_block_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 443.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_redstone_lamp_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 444.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_redstone_lamp_on_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 445.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_redstone_ore_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 446.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_reinforced_deepslate_bottom_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 447.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_reinforced_deepslate_side_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 448.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_reinforced_deepslate_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 449.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_repeater_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 450.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_repeater_on_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 451.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_respawn_anchor_bottom_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 452.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_respawn_anchor_side0_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 453.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_respawn_anchor_side1_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 454.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_respawn_anchor_side2_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 455.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_respawn_anchor_side3_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 456.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_respawn_anchor_side4_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 457.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_respawn_anchor_top_off_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 458.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_rooted_dirt_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 459.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_sand_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 460.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_sandstone_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 461.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_sandstone_bottom_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 462.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_sandstone_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 463.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_sculk_catalyst_bottom_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 464.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_sculk_catalyst_side_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 465.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_sculk_catalyst_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 466.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_sculk_sensor_bottom_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 467.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_sculk_sensor_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 468.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_sculk_shrieker_bottom_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 469.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_shroomlight_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 470.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_shulker_box_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 471.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_slime_block_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 472.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_smithing_table_bottom_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 473.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_smithing_table_front_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 474.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_smithing_table_side_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 475.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_smithing_table_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 476.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_smoker_bottom_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 477.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_smoker_front_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 478.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_smoker_side_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 479.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_smoker_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 480.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_smooth_basalt_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 481.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_smooth_stone_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 482.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_smooth_stone_slab_side_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 483.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_snow_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 484.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_soul_sand_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 485.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_soul_soil_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 486.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_sponge_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 487.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_spruce_door_bottom_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 488.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_spruce_door_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 489.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_spruce_log_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 490.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_spruce_log_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 491.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_spruce_planks_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 492.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_spruce_trapdoor_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 493.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_stone_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 494.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_stone_bricks_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 495.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_stonecutter_bottom_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 496.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_stonecutter_side_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 497.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_stonecutter_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 498.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_stripped_acacia_log_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 499.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_stripped_acacia_log_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 500.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_stripped_bamboo_block_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 501.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_stripped_bamboo_block_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 502.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_stripped_birch_log_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 503.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_stripped_birch_log_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 504.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_stripped_cherry_log_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 505.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_stripped_cherry_log_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 506.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_stripped_crimson_stem_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 507.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_stripped_crimson_stem_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 508.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_stripped_dark_oak_log_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 509.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_stripped_dark_oak_log_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 510.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_stripped_jungle_log_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 511.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_stripped_jungle_log_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 512.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_stripped_mangrove_log_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 513.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_stripped_mangrove_log_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 514.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_stripped_oak_log_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 515.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_stripped_oak_log_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 516.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_stripped_spruce_log_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 517.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_stripped_spruce_log_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 518.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_stripped_warped_stem_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 519.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_stripped_warped_stem_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 520.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_structure_block_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 521.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_structure_block_corner_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 522.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_structure_block_data_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 523.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_structure_block_load_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 524.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_structure_block_save_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 525.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_suspicious_gravel_0_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 526.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_suspicious_gravel_1_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 527.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_suspicious_gravel_2_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 528.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_suspicious_gravel_3_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 529.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_suspicious_sand_0_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 530.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_suspicious_sand_1_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 531.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_suspicious_sand_2_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 532.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_suspicious_sand_3_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 533.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_target_side_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 534.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_target_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 535.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_terracotta_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 536.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_tinted_glass_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 537.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_tnt_bottom_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 538.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_tnt_side_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 539.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_tnt_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 540.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_trial_spawner_top_active_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 541.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_trial_spawner_top_ejecting_reward_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 542.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_trial_spawner_top_inactive_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 543.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_tube_coral_block_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 544.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_tuff_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 545.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_tuff_bricks_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 546.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_verdant_froglight_side_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 547.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_verdant_froglight_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 548.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_warped_door_bottom_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 549.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_warped_door_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 550.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_warped_nylium_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 551.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_warped_nylium_side_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 552.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_warped_planks_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 553.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_warped_stem_top_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 554.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_warped_wart_block_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 555.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_water_overlay_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 556.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_weathered_chiseled_copper_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 557.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_weathered_copper_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 558.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_weathered_copper_bulb_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 559.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_weathered_copper_bulb_lit_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 560.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_weathered_copper_bulb_lit_powered_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 561.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_weathered_copper_bulb_powered_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 562.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_weathered_copper_door_bottom_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 563.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_weathered_cut_copper_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 564.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_wet_sponge_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 565.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_white_concrete_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 566.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_white_concrete_powder_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 567.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_white_glazed_terracotta_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 568.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_white_shulker_box_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 569.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_white_stained_glass_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 570.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_white_terracotta_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 571.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_white_wool_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 572.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_yellow_concrete_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 573.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_yellow_concrete_powder_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 574.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_yellow_glazed_terracotta_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 575.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_yellow_shulker_box_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 576.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_yellow_stained_glass_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 577.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_yellow_terracotta_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 578.0
+      }
+    },
+    {
+      "model": "notenoughtoolsandarmor:item/farmland_moist_hoe_with_yellow_wool_stick",
+      "predicate": {
+        "minecraft:custom_model_data": 579.0
+      }
+    }
+  ],
+  "textures": {
+    "layer0": "notenoughtoolsandarmor:item/farmland_moist_hoe"
+  }
+}

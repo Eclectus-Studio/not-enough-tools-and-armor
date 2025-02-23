@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "notenoughtoolsandarmor:item/muddy_mangrove_roots_side_stick",
+    "layer1": "notenoughtoolsandarmor:item/barrel_top_shovel"
+  }
+}

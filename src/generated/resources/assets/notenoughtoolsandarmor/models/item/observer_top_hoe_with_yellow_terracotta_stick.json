@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "notenoughtoolsandarmor:item/yellow_terracotta_stick",
+    "layer1": "notenoughtoolsandarmor:item/observer_top_hoe"
+  }
+}

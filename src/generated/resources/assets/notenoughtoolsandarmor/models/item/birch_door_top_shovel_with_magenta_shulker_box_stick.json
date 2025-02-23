@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "notenoughtoolsandarmor:item/magenta_shulker_box_stick",
+    "layer1": "notenoughtoolsandarmor:item/birch_door_top_shovel"
+  }
+}

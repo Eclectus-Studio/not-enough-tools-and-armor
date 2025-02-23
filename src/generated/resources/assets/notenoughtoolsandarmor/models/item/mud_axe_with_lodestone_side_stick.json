@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "notenoughtoolsandarmor:item/lodestone_side_stick",
+    "layer1": "notenoughtoolsandarmor:item/mud_axe"
+  }
+}

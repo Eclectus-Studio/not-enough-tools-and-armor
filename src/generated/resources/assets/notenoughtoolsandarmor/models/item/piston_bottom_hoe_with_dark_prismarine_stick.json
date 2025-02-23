@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "notenoughtoolsandarmor:item/dark_prismarine_stick",
+    "layer1": "notenoughtoolsandarmor:item/piston_bottom_hoe"
+  }
+}

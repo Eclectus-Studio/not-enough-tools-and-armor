@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "notenoughtoolsandarmor:item/fire_coral_block_stick",
+    "layer1": "notenoughtoolsandarmor:item/jigsaw_side_axe"
+  }
+}

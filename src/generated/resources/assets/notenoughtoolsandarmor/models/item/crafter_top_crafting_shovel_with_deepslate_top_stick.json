@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "notenoughtoolsandarmor:item/deepslate_top_stick",
+    "layer1": "notenoughtoolsandarmor:item/crafter_top_crafting_shovel"
+  }
+}

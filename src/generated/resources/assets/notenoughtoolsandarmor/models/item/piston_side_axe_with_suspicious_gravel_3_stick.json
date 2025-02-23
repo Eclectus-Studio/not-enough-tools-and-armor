@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "notenoughtoolsandarmor:item/suspicious_gravel_3_stick",
+    "layer1": "notenoughtoolsandarmor:item/piston_side_axe"
+  }
+}

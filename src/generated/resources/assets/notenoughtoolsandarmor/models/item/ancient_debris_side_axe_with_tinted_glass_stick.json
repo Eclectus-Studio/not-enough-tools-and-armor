@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "notenoughtoolsandarmor:item/tinted_glass_stick",
+    "layer1": "notenoughtoolsandarmor:item/ancient_debris_side_axe"
+  }
+}

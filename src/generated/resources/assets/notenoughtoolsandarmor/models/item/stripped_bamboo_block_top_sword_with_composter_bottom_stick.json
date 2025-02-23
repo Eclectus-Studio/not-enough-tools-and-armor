@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "notenoughtoolsandarmor:item/composter_bottom_stick",
+    "layer1": "notenoughtoolsandarmor:item/stripped_bamboo_block_top_sword"
+  }
+}

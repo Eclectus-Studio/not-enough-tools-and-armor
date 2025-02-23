@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "notenoughtoolsandarmor:item/trial_spawner_top_ejecting_reward_stick",
+    "layer1": "notenoughtoolsandarmor:item/smooth_stone_sword"
+  }
+}

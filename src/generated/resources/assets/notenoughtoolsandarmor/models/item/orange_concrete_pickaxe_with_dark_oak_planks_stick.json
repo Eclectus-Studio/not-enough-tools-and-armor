@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "notenoughtoolsandarmor:item/dark_oak_planks_stick",
+    "layer1": "notenoughtoolsandarmor:item/orange_concrete_pickaxe"
+  }
+}

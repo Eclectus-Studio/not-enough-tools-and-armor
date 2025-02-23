@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "notenoughtoolsandarmor:item/cherry_log_stick",
+    "layer1": "notenoughtoolsandarmor:item/bedrock_shovel"
+  }
+}

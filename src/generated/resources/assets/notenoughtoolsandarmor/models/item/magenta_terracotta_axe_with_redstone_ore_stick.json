@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "notenoughtoolsandarmor:item/redstone_ore_stick",
+    "layer1": "notenoughtoolsandarmor:item/magenta_terracotta_axe"
+  }
+}

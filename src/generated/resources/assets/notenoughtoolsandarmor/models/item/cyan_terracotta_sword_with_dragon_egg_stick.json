@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "notenoughtoolsandarmor:item/dragon_egg_stick",
+    "layer1": "notenoughtoolsandarmor:item/cyan_terracotta_sword"
+  }
+}

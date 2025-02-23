@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "notenoughtoolsandarmor:item/calibrated_sculk_sensor_top_stick",
+    "layer1": "notenoughtoolsandarmor:item/grass_block_snow_shovel"
+  }
+}

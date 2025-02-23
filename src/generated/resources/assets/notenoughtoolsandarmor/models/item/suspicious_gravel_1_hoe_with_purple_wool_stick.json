@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "notenoughtoolsandarmor:item/purple_wool_stick",
+    "layer1": "notenoughtoolsandarmor:item/suspicious_gravel_1_hoe"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "notenoughtoolsandarmor:item/dried_kelp_bottom_stick",
+    "layer1": "notenoughtoolsandarmor:item/stripped_crimson_stem_axe"
+  }
+}

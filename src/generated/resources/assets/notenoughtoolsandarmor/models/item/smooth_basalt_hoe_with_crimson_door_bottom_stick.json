@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "notenoughtoolsandarmor:item/crimson_door_bottom_stick",
+    "layer1": "notenoughtoolsandarmor:item/smooth_basalt_hoe"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "notenoughtoolsandarmor:item/pink_concrete_stick",
+    "layer1": "notenoughtoolsandarmor:item/chiseled_red_sandstone_shovel"
+  }
+}

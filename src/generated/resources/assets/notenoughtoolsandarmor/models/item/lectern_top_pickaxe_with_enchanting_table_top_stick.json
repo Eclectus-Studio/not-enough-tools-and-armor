@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "notenoughtoolsandarmor:item/enchanting_table_top_stick",
+    "layer1": "notenoughtoolsandarmor:item/lectern_top_pickaxe"
+  }
+}

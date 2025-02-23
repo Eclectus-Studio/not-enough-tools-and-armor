@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "notenoughtoolsandarmor:item/suspicious_sand_1_stick",
+    "layer1": "notenoughtoolsandarmor:item/bamboo_door_bottom_axe"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "notenoughtoolsandarmor:item/cyan_shulker_box_stick",
+    "layer1": "notenoughtoolsandarmor:item/red_shulker_box_pickaxe"
+  }
+}
