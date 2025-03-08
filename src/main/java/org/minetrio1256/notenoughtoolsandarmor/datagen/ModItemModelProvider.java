@@ -24,7 +24,7 @@ import org.slf4j.Logger;
 
 import java.util.LinkedHashMap;
 
-public class ModItemModelProvider extends ItemModelProvider {
+public class ModItemModelProvider extends ItemModelProvider{
     private static LinkedHashMap<ResourceKey<TrimMaterial>, Float> trimMaterials = new LinkedHashMap<>();
     private static final Logger LOGGER = LogUtils.getLogger();
     static {
