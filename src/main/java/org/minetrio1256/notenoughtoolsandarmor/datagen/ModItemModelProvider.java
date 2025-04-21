@@ -51,11 +51,17 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.OAK_LOG_LEGGINGS);
         trimmedArmorItem(ModItems.OAK_LOG_BOOTS);
         registerSword();
+        System.gc();
         registerShovel();
+        System.gc();
         registerPickaxe();
+        System.gc();
         registerHoe();
+        System.gc();
         registerAxe();
+        System.gc();
         registerStick();
+        System.gc();
     }
     private void registerSword() {
         modded_tool_itemItem(sword.ACACIA_LOG_SWORD);
@@ -3651,7 +3657,6 @@ public class ModItemModelProvider extends ItemModelProvider {
                     .model(new ModelFile.UncheckedModelFile(ResourceLocation.parse(modelPath)))
                     .end();
         }
-        System.gc();
         LOGGER.debug(item.getId().getPath());
 
         return builder; // Ensure this builder is returned and registered by the data generator
