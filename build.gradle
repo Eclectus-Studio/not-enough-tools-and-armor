@@ -165,6 +165,9 @@ tasks.named('processResources', ProcessResources).configure {
 
 // Example for how to get properties into the manifest for reading at runtime.
 tasks.named('jar', Jar).configure {
+    doFirst {
+        println "Packing files into JAR..."
+    }
     manifest {
         attributes(["Specification-Title"     : mod_id,
                     "Specification-Vendor"    : mod_authors,
@@ -174,10 +177,37 @@ tasks.named('jar', Jar).configure {
                     "Implementation-Vendor"   : mod_authors,
                     "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")])
     }
+    eachFile { fileCopyDetails ->
+        def path = fileCopyDetails.path
+        if (path.endsWith(".json") || path.endsWith(".png")) {
+            println "Adding: $path"
+        }
+    }
+
+    doLast {
+        println "Finished packing JAR."
+    }
 
     // This is the preferred method to reobfuscate your jar file
     finalizedBy 'reobfJar'
 }
+tasks.named('processResources').configure {
+    doFirst {
+        println "Starting to process resources..."
+    }
+
+    eachFile { fileCopyDetails ->
+        def path = fileCopyDetails.path
+        if (path.endsWith(".json") || path.endsWith(".png")) {
+            println "Processing: $path"
+        }
+    }
+
+    doLast {
+        println "Finished processing resources."
+    }
+}
+
 
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
